@@ -1,0 +1,11 @@
+{
+  "type": "arlo-the-little-guy:cactus_monument",
+  "biomes": "#arlo-the-little-guy:has_structure/cactus_monument",
+  "step": "surface_structures",
+  "spawn_overrides": {},
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "start_height": {
+    "absolute": 0
+  },
+  "terrain_adaptation": "beard_thin"
+}

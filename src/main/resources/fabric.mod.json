@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "arlo-the-little-guy",
+	"version": "1.0.0",
+	"name": "Arlo the Little Guy",
+	"description": "The mod that adds a useless cactus with a sense of fashion.",
+	"authors": [
+		"PotatoWolfie",
+		"Bubblez705"
+	],
+	"contact": {
+		"homepage": "https://potatowolfie.github.io/arlo-the-little-guy.html",
+		"sources": "https://github.com/PotatoWolfie/arlo-the-little-guy"
+	},
+	"license": "Limited All Rights Reserved",
+	"icon": "assets/arlo-the-little-guy/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"potatowolfie.arlo_the_little_guy.ArloTheLittleGuy"
+		],
+		"fabric-datagen": [
+			"potatowolfie.arlo_the_little_guy.ArloTheLittleGuyDataGenerator"
+		],
+		"client": [
+			"potatowolfie.arlo_the_little_guy.ArloTheLittleGuyClient"
+		]
+	},
+	"mixins": [
+		"arlo-the-little-guy.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

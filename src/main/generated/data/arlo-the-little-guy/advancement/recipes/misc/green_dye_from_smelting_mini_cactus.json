@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_mini_cactus": {
+      "conditions": {
+        "items": [
+          {
+            "items": "arlo-the-little-guy:mini_cactus"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "arlo-the-little-guy:green_dye_from_smelting_mini_cactus"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_mini_cactus"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "arlo-the-little-guy:green_dye_from_smelting_mini_cactus"
+    ]
+  }
+}

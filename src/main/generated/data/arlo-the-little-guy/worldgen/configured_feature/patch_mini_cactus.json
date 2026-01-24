@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "feature": {
+      "feature": {
+        "type": "arlo-the-little-guy:arlo_feature",
+        "config": {
+          "to_place": {
+            "type": "minecraft:simple_state_provider",
+            "state": {
+              "Name": "arlo-the-little-guy:mini_cactus",
+              "Properties": {
+                "facing": "north",
+                "has_hat": "false"
+              }
+            }
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:would_survive",
+                "state": {
+                  "Name": "arlo-the-little-guy:mini_cactus",
+                  "Properties": {
+                    "facing": "north",
+                    "has_hat": "false"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "tries": 10,
+    "xz_spread": 7,
+    "y_spread": 3
+  }
+}

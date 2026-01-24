@@ -1,0 +1,16 @@
+{
+  "no_one_will_believe_you": {
+    "subtitle": "sounds.arlo-the-little-guy.no_one_will_believe_you",
+    "sounds": [
+      "arlo-the-little-guy:no_one_will_believe_you_1",
+      "arlo-the-little-guy:no_one_will_believe_you_2",
+      "arlo-the-little-guy:no_one_will_believe_you_3"
+    ]
+  },
+  "april_fools_whisper": {
+    "subtitle": "sounds.arlo-the-little-guy.april_fools_whisper",
+    "sounds": [
+      "arlo-the-little-guy:april_fools_whisper"
+    ]
+  }
+}

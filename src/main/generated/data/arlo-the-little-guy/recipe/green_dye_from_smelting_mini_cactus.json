@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "mini_cactus",
+  "ingredient": "arlo-the-little-guy:mini_cactus",
+  "result": {
+    "id": "minecraft:green_dye"
+  }
+}
