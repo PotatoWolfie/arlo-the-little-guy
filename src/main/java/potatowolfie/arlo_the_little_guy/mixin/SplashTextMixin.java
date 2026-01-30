@@ -31,6 +31,5 @@ public class SplashTextMixin {
         splashTexts.add(Text.translatable("splash.arlo-the-little-guy.squared").setStyle(yellowStyle));
         splashTexts.add(Text.translatable("splash.arlo-the-little-guy.you_wouldnt").setStyle(yellowStyle));
         splashTexts.add(Text.translatable("splash.arlo-the-little-guy.low").setStyle(yellowStyle));
-        splashTexts.add(Text.translatable("splash.arlo-the-little-guy.corncob_pipe").setStyle(yellowStyle));
     }
 }

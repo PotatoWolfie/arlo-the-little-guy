@@ -4,10 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
-import potatowolfie.arlo_the_little_guy.datagen.ModLootTableGenerator;
-import potatowolfie.arlo_the_little_guy.datagen.ModModelProvider;
-import potatowolfie.arlo_the_little_guy.datagen.ModRecipeGenerator;
-import potatowolfie.arlo_the_little_guy.datagen.ModWorldGenerator;
+import potatowolfie.arlo_the_little_guy.datagen.*;
 import potatowolfie.arlo_the_little_guy.world.feature.ModConfiguredFeatures;
 import potatowolfie.arlo_the_little_guy.world.feature.ModPlacedFeatures;
 
@@ -20,6 +17,7 @@ public class ArloTheLittleGuyDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModLootTableGenerator::new);
 		pack.addProvider(ModWorldGenerator::new);
 		pack.addProvider(ModRecipeGenerator::new);
+		pack.addProvider(ModBlockTagProvider::new);
 	}
 
 	@Override

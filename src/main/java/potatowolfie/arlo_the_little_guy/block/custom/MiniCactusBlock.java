@@ -32,6 +32,7 @@ import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
 import net.minecraft.world.tick.ScheduledTickView;
 import org.jetbrains.annotations.Nullable;
+import potatowolfie.arlo_the_little_guy.advancement.BucketOfArloHandler;
 import potatowolfie.arlo_the_little_guy.advancement.HappyBirthdayHandler;
 import potatowolfie.arlo_the_little_guy.advancement.HatTrickHandler;
 import potatowolfie.arlo_the_little_guy.block.entity.ArloBlockEntity;
@@ -117,6 +118,10 @@ public class MiniCactusBlock extends BlockWithEntity {
                 if (player instanceof ServerPlayerEntity serverPlayer) {
                     HappyBirthdayHandler.grantHappyBirthdayAdvancement(serverPlayer);
                     HatTrickHandler.onHatPlaced(serverPlayer, newHatId.toString());
+
+                    if (newHatId.toString().equals("minecraft:bucket")) {
+                        BucketOfArloHandler.grantBucketOfArloAdvancement(serverPlayer);
+                    }
                 }
             }
             return ActionResult.SUCCESS;

@@ -3,8 +3,6 @@ package potatowolfie.arlo_the_little_guy.world.feature.custom;
 import com.mojang.serialization.Codec;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.registry.Registries;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.random.Random;
@@ -20,10 +18,10 @@ public class ArloFeature extends Feature<SimpleBlockFeatureConfig> {
             new WeightedHat("arlo-the-little-guy:bowler_hat", 20),
             new WeightedHat("minecraft:cactus_flower", 20),
             new WeightedHat("arlo-the-little-guy:cowboy_hat", 15),
-            new WeightedHat("arlo-the-little-guy:tricorn", 15),
+            new WeightedHat("arlo-the-little-guy:tricorn", 10),
             new WeightedHat("arlo-the-little-guy:sun_hat", 10),
-            new WeightedHat("arlo-the-little-guy:top_hat", 10),
             new WeightedHat("arlo-the-little-guy:straw_hat", 10),
+            new WeightedHat("arlo-the-little-guy:top_hat", 5),
             new WeightedHat("arlo-the-little-guy:crown", 5),
             new WeightedHat("minecraft:bucket", 5)
     };
