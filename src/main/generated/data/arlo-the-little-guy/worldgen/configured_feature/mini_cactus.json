@@ -1,0 +1,15 @@
+{
+  "type": "arlo-the-little-guy:arlo_feature",
+  "config": {
+    "to_place": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "arlo-the-little-guy:mini_cactus",
+        "Properties": {
+          "facing": "north",
+          "has_hat": "false"
+        }
+      }
+    }
+  }
+}

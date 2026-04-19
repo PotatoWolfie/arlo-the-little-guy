@@ -1,0 +1,18 @@
+{
+  "wants": {
+    "id": "minecraft:tropical_fish",
+    "count": 3
+  },
+  "additional_wants": {
+    "id": "minecraft:emerald",
+    "count": 6
+  },
+  "gives": {
+    "id": "arlo-the-little-guy:tricorn",
+    "count": 1
+  },
+  "max_uses": 5,
+  "xp": 2,
+  "reputation_discount": 0.05,
+  "given_item_modifiers": []
+}

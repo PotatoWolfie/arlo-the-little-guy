@@ -1,0 +1,14 @@
+{
+  "wants": {
+    "id": "minecraft:emerald",
+    "count": 12
+  },
+  "gives": {
+    "id": "arlo-the-little-guy:crown",
+    "count": 1
+  },
+  "max_uses": 1,
+  "xp": 5,
+  "reputation_discount": 0.05,
+  "given_item_modifiers": []
+}

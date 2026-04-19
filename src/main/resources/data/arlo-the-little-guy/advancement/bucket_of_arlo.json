@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:bucket"
+    },
+    "title": {
+      "translate": "advancement.arlo-the-little-guy.bucket_of_arlo.title"
+    },
+    "description": {
+      "translate": "advancement.arlo-the-little-guy.bucket_of_arlo.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "arlo-the-little-guy:happy_birthday",
+  "criteria": {
+    "bucket_of_arlo": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "bucket_of_arlo"
+    ]
+  ]
+}

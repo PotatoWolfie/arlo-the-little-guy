@@ -1,0 +1,50 @@
+{
+	"schemaVersion": 1,
+	"id": "arlo-the-little-guy",
+	"version": "1.0.0",
+	"name": "Arlo the Little Guy",
+	"description": "The mod that adds a useless cactus with a sense of fashion.",
+	"authors": [
+		"Bubblez705",
+		"PotatoWolfie"
+	],
+	"contact": {
+		"homepage": "https://potatowolfie.github.io/arlo-the-little-guy.html",
+		"sources": "https://github.com/PotatoWolfie/arlo-the-little-guy",
+		"issues": "https://github.com/PotatoWolfie/arlo-the-little-guy/issues"
+	},
+	"license": "Limited All Rights Reserved",
+	"icon": "assets/arlo-the-little-guy/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"potatowolfie.arlo_the_little_guy.ArloTheLittleGuy"
+		],
+		"fabric-datagen": [
+			"potatowolfie.arlo_the_little_guy.ArloTheLittleGuyDataGenerator"
+		],
+		"client": [
+			"potatowolfie.arlo_the_little_guy.ArloTheLittleGuyClient"
+		]
+	},
+	"mixins": [
+		"arlo-the-little-guy.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.2",
+		"minecraft": ">=26.1 <=26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.modrinth": "https://modrinth.com/mod/arlo-the-little-guy",
+				"modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/arlo-the-little-guy",
+				"modmenu.wiki": "https://potatowolfie.github.io/arlo-the-little-guy.html",
+				"modmenu.planet_minecraft": "https://www.planetminecraft.com/mod/arlo-the-little-guy"
+			},
+			"update_checker": true
+		}
+	}
+}

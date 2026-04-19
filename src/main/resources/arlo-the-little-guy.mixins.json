@@ -1,0 +1,29 @@
+{
+  "required": true,
+  "package": "potatowolfie.arlo_the_little_guy.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ExampleMixin",
+    "PigEntityMixin",
+    "SnowGolemEntityMixin",
+    "SuppressMiniCactusWarningMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  },
+  "client": [
+    "LivingEntityRendererMixin",
+    "PigEntityModelMixin",
+    "PigEntityRendererMixin",
+    "PigEntityRendererStateMixin",
+    "PigEntityRenderStateMixin",
+    "SnowGolemEntityModelMixin",
+    "SnowGolemEntityRendererMixin",
+    "SnowGolemEntityRendererStateMixin",
+    "SnowGolemEntityRenderStateMixin",
+    "SplashTextMixin"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "wants": {
+    "id": "minecraft:leather",
+    "count": 5
+  },
+  "additional_wants": {
+    "id": "minecraft:emerald",
+    "count": 8
+  },
+  "gives": {
+    "id": "arlo-the-little-guy:cowboy_hat",
+    "count": 1
+  },
+  "max_uses": 5,
+  "xp": 2,
+  "reputation_discount": 0.05,
+  "given_item_modifiers": []
+}

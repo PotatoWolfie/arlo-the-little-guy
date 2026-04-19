@@ -1,0 +1,134 @@
+{
+  "parent": "arlo-the-little-guy:happy_birthday",
+  "display": {
+    "icon": {
+      "id": "arlo-the-little-guy:cowboy_hat"
+    },
+    "title": {
+      "translate": "advancement.arlo-the-little-guy.the_hat_man.title"
+    },
+    "description": {
+      "translate": "advancement.arlo-the-little-guy.the_hat_man.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "has_bowler_hat": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arlo-the-little-guy:bowler_hat"
+            ],
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    },
+    "has_tricorn": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arlo-the-little-guy:tricorn"
+            ],
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    },
+    "has_straw_hat": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arlo-the-little-guy:straw_hat"
+            ],
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    },
+    "has_cowboy_hat": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arlo-the-little-guy:cowboy_hat"
+            ],
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    },
+    "has_top_hat": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arlo-the-little-guy:top_hat"
+            ],
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    },
+    "has_sun_hat": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arlo-the-little-guy:sun_hat"
+            ],
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    },
+    "has_crown": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arlo-the-little-guy:crown"
+            ],
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+      ["has_bowler_hat"],
+      ["has_tricorn"],
+      ["has_straw_hat"],
+      ["has_cowboy_hat"],
+      ["has_top_hat"],
+      ["has_sun_hat"],
+      ["has_crown"]
+  ]
+}

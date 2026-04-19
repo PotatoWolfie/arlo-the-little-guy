@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "arlo-the-little-guy:bowler_hat"
+    },
+    "title": {
+      "translate": "advancement.arlo-the-little-guy.happy_birthday.title"
+    },
+    "description": {
+      "translate": "advancement.arlo-the-little-guy.happy_birthday.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "minecraft:adventure/root",
+  "criteria": {
+    "happy_birthday": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "happy_birthday"
+    ]
+  ]
+}

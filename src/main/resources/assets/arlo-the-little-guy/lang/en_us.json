@@ -1,0 +1,37 @@
+{
+  "block.arlo-the-little-guy.chiseled_arlo_sandstone": "Chiseled Arlo Sandstone",
+  "block.arlo-the-little-guy.mini_cactus": "Mini Cactus",
+
+  "item.arlo-the-little-guy.bowler_hat": "Bowler Hat",
+  "item.arlo-the-little-guy.tricorn": "Tricorn",
+  "item.arlo-the-little-guy.straw_hat": "Straw Hat",
+  "item.arlo-the-little-guy.cowboy_hat": "Cowboy Hat",
+  "item.arlo-the-little-guy.top_hat": "Top Hat",
+  "item.arlo-the-little-guy.sun_hat": "Sun Hat",
+  "item.arlo-the-little-guy.crown": "Crown",
+
+  "tag.item.arlo-the-little-guy.hat": "Hat",
+
+  "advancement.arlo-the-little-guy.happy_birthday.title": "Happy Birthday!",
+  "advancement.arlo-the-little-guy.happy_birthday.description": "Bring Arlo the Mini Cactus to life with a hat",
+  "advancement.arlo-the-little-guy.the_hat_man.title": "The Hat Man",
+  "advancement.arlo-the-little-guy.the_hat_man.description": "Obtain all types of hats",
+  "advancement.arlo-the-little-guy.hat_trick.title": "Hat Trick",
+  "advancement.arlo-the-little-guy.hat_trick.description": "Place every type of hat on Arlo",
+  "advancement.arlo-the-little-guy.bucket_of_arlo.title": "Bucket of Arlo",
+  "advancement.arlo-the-little-guy.bucket_of_arlo.description": "Give Arlo the Mini Cactus a bucket hat",
+
+  "splash.arlo-the-little-guy.102_arlo": "Now with 102% more Arlo!",
+  "splash.arlo-the-little-guy.us_in_cactus": "There is no I in TEAM, but there is an US in CACTUS. <3",
+  "splash.arlo-the-little-guy.we_have_hats": "We have hats now if you want one :3",
+  "splash.arlo-the-little-guy.squared": "Don’t hug me I’m squared. (And pokey.)",
+  "splash.arlo-the-little-guy.you_wouldnt": "You wouldn’t cac a tus.",
+  "splash.arlo-the-little-guy.low": "Ar-low can you go?",
+
+  "sounds.arlo-the-little-guy.no_one_will_believe_you": "...",
+  "sounds.arlo-the-little-guy.april_fools_whisper": "...",
+
+  "modmenu.nameTranslation.arlo-the-little-guy": "Arlo the Little Guy",
+  "modmenu.descriptionTranslation.arlo-the-little-guy": "The mod that adds a useless cactus with a sense of fashion.",
+  "modmenu.planet_minecraft": "Planet Minecraft"
+}

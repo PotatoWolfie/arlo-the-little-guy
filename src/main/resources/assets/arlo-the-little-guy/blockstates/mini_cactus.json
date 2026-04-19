@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=north,has_hat=false": {
+      "model": "arlo-the-little-guy:block/mini_cactus",
+      "y": 90
+    },
+    "facing=south,has_hat=false": {
+      "model": "arlo-the-little-guy:block/mini_cactus",
+      "y": 270
+    },
+    "facing=west,has_hat=false": {
+      "model": "arlo-the-little-guy:block/mini_cactus"
+    },
+    "facing=east,has_hat=false": {
+      "model": "arlo-the-little-guy:block/mini_cactus",
+      "y": 180
+    },
+    "facing=north,has_hat=true": {
+      "model": "arlo-the-little-guy:block/mini_cactus_invisible",
+      "y": 90
+    },
+    "facing=south,has_hat=true": {
+      "model": "arlo-the-little-guy:block/mini_cactus_invisible",
+      "y": 270
+    },
+    "facing=west,has_hat=true": {
+      "model": "arlo-the-little-guy:block/mini_cactus_invisible"
+    },
+    "facing=east,has_hat=true": {
+      "model": "arlo-the-little-guy:block/mini_cactus_invisible",
+      "y": 180
+    }
+  }
+}
