@@ -4,6 +4,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.EquipmentSlot; // Added
 import net.minecraft.world.entity.animal.golem.SnowGolem;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
@@ -24,7 +25,7 @@ public class SnowGolemEntityMixin {
         ItemStack stack = player.getItemInHand(hand);
 
         if (stack.is(Items.SHEARS)) {
-            ItemStack currentArmor = snowGolem.getBodyArmorItem();
+            ItemStack currentArmor = snowGolem.getItemBySlot(EquipmentSlot.BODY);
 
             if (currentArmor.getItem() == ModItems.TOP_HAT) {
                 if (!snowGolem.level().isClientSide()) {
@@ -37,7 +38,8 @@ public class SnowGolemEntityMixin {
                     );
 
                     snowGolem.level().addFreshEntity(itemEntity);
-                    snowGolem.setBodyArmorItem(ItemStack.EMPTY);
+
+                    snowGolem.setItemSlot(EquipmentSlot.BODY, ItemStack.EMPTY);
                     stack.hurtAndBreak(1, player, player.getEquipmentSlotForItem(stack));
 
                     snowGolem.level().playSound(
@@ -58,7 +60,7 @@ public class SnowGolemEntityMixin {
         }
 
         if (stack.getItem() == ModItems.TOP_HAT && !snowGolem.hasPumpkin()) {
-            ItemStack currentArmor = snowGolem.getBodyArmorItem();
+            ItemStack currentArmor = snowGolem.getItemBySlot(EquipmentSlot.BODY);
 
             if (currentArmor.getItem() == ModItems.TOP_HAT) {
                 cir.setReturnValue(InteractionResult.PASS);
@@ -72,7 +74,8 @@ public class SnowGolemEntityMixin {
 
                 ItemStack topHatCopy = stack.copy();
                 topHatCopy.setCount(1);
-                snowGolem.setBodyArmorItem(topHatCopy);
+
+                snowGolem.setItemSlot(EquipmentSlot.BODY, topHatCopy);
 
                 if (!player.isCreative()) {
                     stack.shrink(1);

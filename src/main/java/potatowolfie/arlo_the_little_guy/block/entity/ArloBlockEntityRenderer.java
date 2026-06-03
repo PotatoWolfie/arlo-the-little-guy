@@ -6,7 +6,6 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.client.renderer.LevelRenderer;
 import net.minecraft.client.renderer.SubmitNodeCollector;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderer;
 import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
@@ -60,7 +59,8 @@ public class ArloBlockEntityRenderer implements BlockEntityRenderer<ArloBlockEnt
 
         RenderType renderLayer = RenderTypes.armorCutoutNoCull(TEXTURE);
         final ArloBlockEntityRenderState capturedState = state;
-        final int light = state.light;
+
+        final int light = state.lightCoords;
 
         submitNodeCollector.submitCustomGeometry(poseStack, renderLayer, (poseStackEntry, vertexConsumer) -> {
             model.setAngles(capturedState);
@@ -116,7 +116,6 @@ public class ArloBlockEntityRenderer implements BlockEntityRenderer<ArloBlockEnt
 
         if (entity.getLevel() != null) {
             renderState.age = entity.getLevel().getGameTime() + tickProgress;
-            renderState.light = LevelRenderer.getLightCoords(entity.getLevel(), entity.getBlockPos());
         }
     }
 }

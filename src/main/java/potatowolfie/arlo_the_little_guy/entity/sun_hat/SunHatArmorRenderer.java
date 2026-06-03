@@ -40,12 +40,7 @@ public class SunHatArmorRenderer implements ArmorRenderer {
                 this.model.renderType(TEXTURE),
                 light,
                 OverlayTexture.NO_OVERLAY,
-                null,
-                false,
-                false,
-                -1,
-                null,
-                0
+                null
         );
         contextModel.head.visible = true;
     }

@@ -2,6 +2,7 @@ package potatowolfie.arlo_the_little_guy.mixin;
 
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.EquipmentSlot; // Added
 import net.minecraft.world.entity.animal.pig.Pig;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
@@ -20,7 +21,7 @@ public class PigEntityMixin {
         ItemStack stack = player.getItemInHand(hand);
 
         if (stack.getItem() == ModItems.CROWN) {
-            ItemStack currentArmor = pig.getBodyArmorItem();
+            ItemStack currentArmor = pig.getItemBySlot(EquipmentSlot.BODY);
 
             if (currentArmor.getItem() == ModItems.CROWN) {
                 cir.setReturnValue(InteractionResult.PASS);
@@ -34,7 +35,8 @@ public class PigEntityMixin {
 
                 ItemStack crownCopy = stack.copy();
                 crownCopy.setCount(1);
-                pig.setBodyArmorItem(crownCopy);
+
+                pig.setItemSlot(EquipmentSlot.BODY, crownCopy);
 
                 if (!player.isCreative()) {
                     stack.shrink(1);

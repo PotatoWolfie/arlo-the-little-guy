@@ -63,12 +63,7 @@ public class PigCrownRenderer extends RenderLayer<PigRenderState, PigModel> {
                 this.crownModel.renderType(PIG_CROWN_TEXTURE),
                 lightCoords,
                 OverlayTexture.NO_OVERLAY,
-                null,
-                false,
-                false,
-                -1,
-                null,
-                0
+                null
         );
 
         poseStack.popPose();

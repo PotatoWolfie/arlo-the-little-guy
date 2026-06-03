@@ -67,12 +67,7 @@ public class SnowGolemTopHatRenderer extends RenderLayer<SnowGolemRenderState, S
                 this.topHatModel.renderType(SNOW_GOLEM_TOP_HAT_TEXTURE),
                 lightCoords,
                 OverlayTexture.NO_OVERLAY,
-                null,
-                false,
-                false,
-                -1,
-                null,
-                0
+                null
         );
 
         poseStack.popPose();

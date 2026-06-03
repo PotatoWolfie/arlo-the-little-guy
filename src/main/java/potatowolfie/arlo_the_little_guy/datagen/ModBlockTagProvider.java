@@ -3,6 +3,7 @@ package potatowolfie.arlo_the_little_guy.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagsProvider;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.tags.BlockTags;
 import potatowolfie.arlo_the_little_guy.block.ModBlocks;
 
@@ -15,11 +16,10 @@ public class ModBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider wrapperLookup) {
-        valueLookupBuilder(BlockTags.HAPPY_GHAST_AVOIDS)
-                .add(ModBlocks.MINI_CACTUS
-                );
-        valueLookupBuilder(BlockTags.ENDERMAN_HOLDABLE)
-                .add(ModBlocks.MINI_CACTUS
-                );
+        builder(BlockTags.HAPPY_GHAST_AVOIDS)
+                .add(BuiltInRegistries.BLOCK.wrapAsHolder(ModBlocks.MINI_CACTUS).unwrapKey().orElseThrow());
+
+        builder(BlockTags.ENDERMAN_HOLDABLE)
+                .add(BuiltInRegistries.BLOCK.wrapAsHolder(ModBlocks.MINI_CACTUS).unwrapKey().orElseThrow());
     }
 }
