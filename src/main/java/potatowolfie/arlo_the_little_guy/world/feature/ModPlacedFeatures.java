@@ -18,6 +18,7 @@ import java.util.List;
 public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> PATCH_MINI_CACTUS_DESERT_PLACED = registerKey("patch_mini_cactus_desert");
+    public static final ResourceKey<PlacedFeature> ARLROOMS_ENTRANCE_PLACED = registerKey("arlrooms_entrance");
 
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatureRegistryEntryLookup =
@@ -33,6 +34,15 @@ public class ModPlacedFeatures {
                         CountPlacement.of(10),
                         RandomOffsetPlacement.ofTriangle(7, 3),
 
+                        BiomeFilter.biome()
+                ));
+
+        register(context, ARLROOMS_ENTRANCE_PLACED,
+                configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ARLROOMS_ENTRANCE),
+                List.of(
+                        RarityFilter.onAverageOnceEvery(75),
+                        InSquarePlacement.spread(),
+                        HeightmapPlacement.onHeightmap(Heightmap.Types.MOTION_BLOCKING),
                         BiomeFilter.biome()
                 ));
     }

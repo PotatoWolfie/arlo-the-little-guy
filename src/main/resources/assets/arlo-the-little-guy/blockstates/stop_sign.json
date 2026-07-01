@@ -1,0 +1,35 @@
+{
+  "variants": {
+    "facing=north,wall=false": {
+      "model": "arlo-the-little-guy:block/stop_sign_post"
+    },
+    "facing=east,wall=false": {
+      "model": "arlo-the-little-guy:block/stop_sign_post",
+      "y": 90
+    },
+    "facing=south,wall=false": {
+      "model": "arlo-the-little-guy:block/stop_sign_post",
+      "y": 180
+    },
+    "facing=west,wall=false": {
+      "model": "arlo-the-little-guy:block/stop_sign_post",
+      "y": 270
+    },
+
+    "facing=north,wall=true": {
+      "model": "arlo-the-little-guy:block/stop_sign_wall"
+    },
+    "facing=east,wall=true": {
+      "model": "arlo-the-little-guy:block/stop_sign_wall",
+      "y": 90
+    },
+    "facing=south,wall=true": {
+      "model": "arlo-the-little-guy:block/stop_sign_wall",
+      "y": 180
+    },
+    "facing=west,wall=true": {
+      "model": "arlo-the-little-guy:block/stop_sign_wall",
+      "y": 270
+    }
+  }
+}

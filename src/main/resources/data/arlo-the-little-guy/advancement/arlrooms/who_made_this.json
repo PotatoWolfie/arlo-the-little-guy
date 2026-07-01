@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "id": "arlo-the-little-guy:cassette_tape_question"
+    },
+    "title": {
+      "translate": "advancement.arlo-the-little-guy.who_made_this.title"
+    },
+    "description": {
+      "translate": "advancement.arlo-the-little-guy.who_made_this.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "arlo-the-little-guy:arlrooms/a_burning_memory",
+  "criteria": {
+    "has_tape": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arlo-the-little-guy:cassette_tape_question"
+            ],
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_tape"
+    ]
+  ]
+}

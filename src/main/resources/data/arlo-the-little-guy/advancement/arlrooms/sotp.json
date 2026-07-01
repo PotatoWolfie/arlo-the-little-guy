@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "id": "arlo-the-little-guy:stop_sign"
+    },
+    "title": {
+      "translate": "advancement.arlo-the-little-guy.sotp.title"
+    },
+    "description": {
+      "translate": "advancement.arlo-the-little-guy.sotp.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "arlo-the-little-guy:arlrooms/root",
+  "criteria": {
+    "has_stop_sign": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arlo-the-little-guy:stop_sign"
+            ],
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_stop_sign"
+    ]
+  ]
+}

@@ -100,6 +100,15 @@ public class ModLootTableModifier {
                                 .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))));
                 tableBuilder.withPool(poolBuilder);
             }
+
+            if (id.equals(Identifier.fromNamespaceAndPath("minecraft", "chests/underwater_ruin_big"))) {
+                LootPool.Builder poolBuilder = LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1))
+                        .when(net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition.randomChance(0.06f))
+                        .add(LootItem.lootTableItem(ModItems.PRISMARINE_PIPIS)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))));
+                tableBuilder.withPool(poolBuilder);
+            }
         });
     }
 }

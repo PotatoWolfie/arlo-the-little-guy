@@ -43,6 +43,10 @@ public class ArloFeature extends Feature<SimpleBlockConfiguration> {
             return false;
         }
 
+        if (world.getBlockState(pos).liquid()) {
+            return false;
+        }
+
         if (state.hasProperty(MiniCactusBlock.FACING)) {
             Direction[] horizontalDirections = {Direction.NORTH, Direction.EAST, Direction.SOUTH, Direction.WEST};
             Direction randomDirection = horizontalDirections[random.nextInt(horizontalDirections.length)];

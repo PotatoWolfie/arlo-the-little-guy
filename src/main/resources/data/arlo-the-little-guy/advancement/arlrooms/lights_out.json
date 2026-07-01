@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "arlo-the-little-guy:ceiling_light"
+    },
+    "title": {
+      "translate": "advancement.arlo-the-little-guy.light_out.title"
+    },
+    "description": {
+      "translate": "advancement.arlo-the-little-guy.light_out.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "arlo-the-little-guy:arlrooms/root",
+  "criteria": {
+    "lights_out": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "lights_out"
+    ]
+  ]
+}

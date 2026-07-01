@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "rotation=0":  { "model": "arlo-the-little-guy:block/cactus_player_head_0" },
+    "rotation=1":  { "model": "arlo-the-little-guy:block/cactus_player_head_1" },
+    "rotation=2":  { "model": "arlo-the-little-guy:block/cactus_player_head_2" },
+    "rotation=3":  { "model": "arlo-the-little-guy:block/cactus_player_head_3" },
+    "rotation=4":  { "model": "arlo-the-little-guy:block/cactus_player_head_4" },
+    "rotation=5":  { "model": "arlo-the-little-guy:block/cactus_player_head_5" },
+    "rotation=6":  { "model": "arlo-the-little-guy:block/cactus_player_head_6" },
+    "rotation=7":  { "model": "arlo-the-little-guy:block/cactus_player_head_7" },
+    "rotation=8":  { "model": "arlo-the-little-guy:block/cactus_player_head_8" },
+    "rotation=9":  { "model": "arlo-the-little-guy:block/cactus_player_head_9" },
+    "rotation=10": { "model": "arlo-the-little-guy:block/cactus_player_head_10" },
+    "rotation=11": { "model": "arlo-the-little-guy:block/cactus_player_head_11" },
+    "rotation=12": { "model": "arlo-the-little-guy:block/cactus_player_head_12" },
+    "rotation=13": { "model": "arlo-the-little-guy:block/cactus_player_head_13" },
+    "rotation=14": { "model": "arlo-the-little-guy:block/cactus_player_head_14" },
+    "rotation=15": { "model": "arlo-the-little-guy:block/cactus_player_head_15" }
+  }
+}

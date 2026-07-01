@@ -36,6 +36,11 @@
         },
         {
           "type": "minecraft:item",
+          "name": "arlo-the-little-guy:prismarine_pipis",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
           "name": "arlo-the-little-guy:crown",
           "weight": 5
         }

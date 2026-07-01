@@ -1,0 +1,27 @@
+{
+  "display": {
+    "icon": {
+      "id": "arlo-the-little-guy:no_clip_moist_wool"
+    },
+    "title": {
+      "translate": "advancement.arlo-the-little-guy.way_deeper_down.title"
+    },
+    "description": {
+      "translate": "advancement.arlo-the-little-guy.way_deeper_down.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "arlo-the-little-guy:arlrooms/root",
+  "criteria": {
+    "way_deeper_down": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "way_deeper_down"
+    ]
+  ]
+}

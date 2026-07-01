@@ -1,0 +1,45 @@
+{
+  "display": {
+    "icon": {
+      "id": "arlo-the-little-guy:cassette_tape_1"
+    },
+    "title": {
+      "translate": "advancement.arlo-the-little-guy.a_burning_memory.title"
+    },
+    "description": {
+      "translate": "advancement.arlo-the-little-guy.a_burning_memory.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "arlo-the-little-guy:arlrooms/root",
+  "criteria": {
+    "has_tape": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arlo-the-little-guy:cassette_tape_1",
+              "arlo-the-little-guy:cassette_tape_2",
+              "arlo-the-little-guy:cassette_tape_3",
+              "arlo-the-little-guy:cassette_tape_4",
+              "arlo-the-little-guy:cassette_tape_5",
+              "arlo-the-little-guy:cassette_tape_6",
+              "arlo-the-little-guy:cassette_tape_7"
+            ],
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_tape"
+    ]
+  ]
+}

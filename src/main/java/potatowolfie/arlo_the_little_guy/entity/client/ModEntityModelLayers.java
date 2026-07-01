@@ -30,6 +30,9 @@ public class ModEntityModelLayers {
     public static final ModelLayerLocation CROWN = new ModelLayerLocation(
             Identifier.fromNamespaceAndPath("arlo-the-little-guy", "crown"), "main"
     );
+    public static final ModelLayerLocation PRISMARINE_PIPIS = new ModelLayerLocation(
+            Identifier.fromNamespaceAndPath("arlo-the-little-guy", "prismarine_pipis"), "main"
+    );
     public static final ModelLayerLocation PIG_CROWN = new ModelLayerLocation(
             Identifier.fromNamespaceAndPath("arlo-the-little-guy", "pig_crown"), "main"
     );
@@ -39,6 +42,10 @@ public class ModEntityModelLayers {
 
     public static final ModelLayerLocation ARLO = new ModelLayerLocation(
             Identifier.fromNamespaceAndPath("arlo-the-little-guy", "arlo"), "main"
+    );
+
+    public static final ModelLayerLocation CACTUS_HORSE = new ModelLayerLocation(
+            Identifier.fromNamespaceAndPath("arlo-the-little-guy", "cactus_horse"), "main"
     );
 
     public static void registerModelLayers() {

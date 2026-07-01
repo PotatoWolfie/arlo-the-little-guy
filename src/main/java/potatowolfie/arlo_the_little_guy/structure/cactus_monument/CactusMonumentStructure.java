@@ -1,4 +1,4 @@
-package potatowolfie.arlo_the_little_guy.structure;
+package potatowolfie.arlo_the_little_guy.structure.cactus_monument;
 
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -7,6 +7,7 @@ import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.structure.Structure;
 import net.minecraft.world.level.levelgen.structure.StructureType;
 import net.minecraft.world.level.levelgen.structure.pieces.StructurePiecesBuilder;
+import potatowolfie.arlo_the_little_guy.structure.ModStructureTypes;
 
 import java.util.Optional;
 

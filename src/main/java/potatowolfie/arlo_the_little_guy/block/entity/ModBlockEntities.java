@@ -17,6 +17,13 @@ public class ModBlockEntities {
                     FabricBlockEntityTypeBuilder.create(ArloBlockEntity::new, ModBlocks.MINI_CACTUS).build()
             );
 
+    public static final BlockEntityType<CassetteTapePlayerBlockEntity> CASSETTE_TAPE_PLAYER =
+            Registry.register(
+                    BuiltInRegistries.BLOCK_ENTITY_TYPE,
+                    Identifier.fromNamespaceAndPath("arlo-the-little-guy", "cassette_tape_player"),
+                    FabricBlockEntityTypeBuilder.create(CassetteTapePlayerBlockEntity::new, ModBlocks.CASSETTE_TAPE_PLAYER).build()
+            );
+
     public static void registerBlockEntities() {
         ArloTheLittleGuy.LOGGER.info("Registering Block Entities for " + ArloTheLittleGuy.MOD_ID);
     }

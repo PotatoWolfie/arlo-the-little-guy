@@ -1,4 +1,4 @@
-package potatowolfie.arlo_the_little_guy.structure;
+package potatowolfie.arlo_the_little_guy.structure.cactus_monument;
 
 import com.google.common.collect.Lists;
 import net.minecraft.core.BlockPos;
@@ -32,6 +32,7 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlac
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplateManager;
 import net.minecraft.world.level.levelgen.synth.SimplexNoise;
+import potatowolfie.arlo_the_little_guy.structure.ModStructurePieceTypes;
 
 import java.util.List;
 

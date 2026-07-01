@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "arlo-the-little-guy",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"name": "Arlo the Little Guy",
 	"description": "The mod that adds a useless cactus with a sense of fashion.",
 	"authors": [
@@ -32,7 +32,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.18.2",
-		"minecraft": "26.2-pre.3",
+		"minecraft": "26.2",
 		"java": ">=25",
 		"fabric-api": "*"
 	},

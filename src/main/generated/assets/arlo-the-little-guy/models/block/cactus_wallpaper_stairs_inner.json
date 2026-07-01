@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "arlo-the-little-guy:block/cactus_wallpaper",
+    "side": "arlo-the-little-guy:block/cactus_wallpaper",
+    "top": "arlo-the-little-guy:block/cactus_wallpaper"
+  }
+}

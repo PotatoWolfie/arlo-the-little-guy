@@ -24,6 +24,9 @@ public class ArloBlockEntityModel extends Model<ArloBlockEntityRenderState> {
 	private final ModelPart bucket_hat;
 	private final ModelPart tophat;
 	private final ModelPart pirate_hat;
+	private final ModelPart goggles;
+	private final ModelPart prismarine_pipis;
+	private final ModelPart stop_sign;
 
 	private final KeyframeAnimation idleAnimation;
 	private final KeyframeAnimation interactAnimation;
@@ -43,6 +46,9 @@ public class ArloBlockEntityModel extends Model<ArloBlockEntityRenderState> {
 		this.bucket_hat = this.arlo.getChild("bucket_hat");
 		this.tophat = this.arlo.getChild("tophat");
 		this.pirate_hat = this.arlo.getChild("pirate_hat");
+		this.goggles = this.arlo.getChild("goggles");
+		this.prismarine_pipis = this.arlo.getChild("prismarine_pipis");
+		this.stop_sign = this.arm.getChild("stop_sign");
 
 		this.idleAnimation = ArloAnimations.ARLO_IDLE.bake(root);
 		this.interactAnimation = ArloAnimations.ARLO_SHAKE.bake(root);
@@ -61,7 +67,7 @@ public class ArloBlockEntityModel extends Model<ArloBlockEntityRenderState> {
 						.texOffs(32, 0).addBox(-4.0F, -18.0F, -4.0F, 1.0F, 18.0F, 1.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 24.0F, 0.0F));
 
-		arlo.addOrReplaceChild("arm", CubeListBuilder.create()
+		PartDefinition arm = arlo.addOrReplaceChild("arm", CubeListBuilder.create()
 						.texOffs(0, 24).addBox(0.0F, -1.5F, -1.5F, 5.0F, 3.0F, 3.0F, new CubeDeformation(0.0F))
 						.texOffs(16, 24).addBox(2.0F, -4.5F, -1.5F, 3.0F, 3.0F, 3.0F, new CubeDeformation(0.0F))
 						.texOffs(40, 0).addBox(1.0F, -4.5F, -2.5F, 1.0F, 6.0F, 1.0F, new CubeDeformation(0.0F))
@@ -127,6 +133,31 @@ public class ArloBlockEntityModel extends Model<ArloBlockEntityRenderState> {
 						.texOffs(50, 40).addBox(-5.5F, -25.0F, -4.5F, 11.0F, 7.0F, 9.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 0.0F, 0.0F));
 
+		arlo.addOrReplaceChild("goggles", CubeListBuilder.create()
+						.texOffs(50, 56).addBox(-3.0F, -16.5F, -3.0F, 6.0F, 3.0F, 6.0F, new CubeDeformation(0.01F))
+						.texOffs(50, 65).addBox(-3.0F, -16.5F, -4.01F, 2.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
+						.texOffs(62, 65).addBox(-4.0F, -15.5F, -4.01F, 8.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
+						.texOffs(50, 67).addBox(-3.0F, -14.5F, -4.01F, 2.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
+						.texOffs(56, 65).addBox(1.0F, -16.5F, -4.01F, 2.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
+						.texOffs(56, 67).addBox(1.0F, -14.5F, -4.01F, 2.0F, 1.0F, 1.0F, new CubeDeformation(0.0F)),
+				PartPose.offset(0.0F, -2.5F, 0.0F));
+
+		arlo.addOrReplaceChild("prismarine_pipis", CubeListBuilder.create()
+						.texOffs(44, 69).addBox(-3.0F, -1.5F, -3.0F, 6.0F, 3.0F, 6.0F, new CubeDeformation(0.25F)),
+				PartPose.offset(0.0F, -19.5F, 0.0F));
+
+		PartDefinition stop_sign = arm.addOrReplaceChild("stop_sign", CubeListBuilder.create()
+						.texOffs(76, 57).addBox(3.0F, -25.5F, -0.72F, 7.0F, 7.0F, 0.01F, new CubeDeformation(0.0F)),
+				PartPose.offset(-3.0F, 9.5F, 0.0F));
+
+		stop_sign.addOrReplaceChild("cube_r5", CubeListBuilder.create()
+						.texOffs(91, 57).addBox(-1.0F, -9.0F, 0.0F, 2.0F, 10.0F, 0.0F, new CubeDeformation(0.0F)),
+				PartPose.offsetAndRotation(6.5F, -15.0F, 0.0F, 0.0F, 0.7854F, 0.0F));
+
+		stop_sign.addOrReplaceChild("cube_r6", CubeListBuilder.create()
+						.texOffs(91, 57).addBox(-1.0F, -9.0F, 0.0F, 2.0F, 10.0F, 0.0F, new CubeDeformation(0.0F)),
+				PartPose.offsetAndRotation(6.5F, -15.0F, 0.0F, 0.0F, -0.7854F, 0.0F));
+
 		return LayerDefinition.create(modelData, 128, 128);
 	}
 
@@ -144,6 +175,9 @@ public class ArloBlockEntityModel extends Model<ArloBlockEntityRenderState> {
 		this.bucket_hat.visible = false;
 		this.tophat.visible = false;
 		this.pirate_hat.visible = false;
+		this.goggles.visible = false;
+		this.prismarine_pipis.visible = false;
+		this.stop_sign.visible = false;
 
 		switch (renderState.hatType) {
 			case "arlo-the-little-guy:bowler_hat" -> this.bowler_hat.visible = true;
@@ -155,6 +189,9 @@ public class ArloBlockEntityModel extends Model<ArloBlockEntityRenderState> {
 			case "minecraft:bucket" -> this.bucket_hat.visible = true;
 			case "arlo-the-little-guy:top_hat" -> this.tophat.visible = true;
 			case "arlo-the-little-guy:tricorn" -> this.pirate_hat.visible = true;
+			case "arlo-the-little-guy:goggles" -> this.goggles.visible = true;
+			case "arlo-the-little-guy:prismarine_pipis" -> this.prismarine_pipis.visible = true;
+			case "arlo-the-little-guy:stop_sign" -> this.stop_sign.visible = true;
 		}
 
 		if (renderState.arloState == ArloBlockEntity.ArloState.INTERACTING) {
@@ -166,51 +203,19 @@ public class ArloBlockEntityModel extends Model<ArloBlockEntityRenderState> {
 		}
 	}
 
-	public ModelPart getArlo() {
-		return this.arlo;
-	}
-
-	public ModelPart getArm() {
-		return this.arm;
-	}
-
-	public ModelPart getBowlerHat() {
-		return this.bowler_hat;
-	}
-
-	public ModelPart getCactusFlower() {
-		return this.cactus_flower;
-	}
-
-	public ModelPart getCowboyHat() {
-		return this.cowboy_hat;
-	}
-
-	public ModelPart getCrownHat() {
-		return this.crown_hat;
-	}
-
-	public ModelPart getStrawHat() {
-		return this.straw_hat;
-	}
-
-	public ModelPart getSunHat() {
-		return this.sun_hat;
-	}
-
-	public ModelPart getBucketHat() {
-		return this.bucket_hat;
-	}
-
-	public ModelPart getTophat() {
-		return this.tophat;
-	}
-
-	public ModelPart getPirateHat() {
-		return this.pirate_hat;
-	}
-
-	public ModelPart getRoot() {
-		return this.root;
-	}
+	public ModelPart getArlo() { return this.arlo; }
+	public ModelPart getArm() { return this.arm; }
+	public ModelPart getBowlerHat() { return this.bowler_hat; }
+	public ModelPart getCactusFlower() { return this.cactus_flower; }
+	public ModelPart getCowboyHat() { return this.cowboy_hat; }
+	public ModelPart getCrownHat() { return this.crown_hat; }
+	public ModelPart getStrawHat() { return this.straw_hat; }
+	public ModelPart getSunHat() { return this.sun_hat; }
+	public ModelPart getBucketHat() { return this.bucket_hat; }
+	public ModelPart getTophat() { return this.tophat; }
+	public ModelPart getPirateHat() { return this.pirate_hat; }
+	public ModelPart getGoggles() { return this.goggles; }
+	public ModelPart getPrismarinePipis() { return this.prismarine_pipis; }
+	public ModelPart getStopSign() { return this.stop_sign; }
+	public ModelPart getRoot() { return this.root; }
 }

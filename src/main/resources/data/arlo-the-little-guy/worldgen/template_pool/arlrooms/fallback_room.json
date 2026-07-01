@@ -1,0 +1,15 @@
+{
+  "name": "arlo-the-little-guy:arlrooms/fallback_room",
+  "fallback": "minecraft:empty",
+  "elements": [
+    {
+      "weight": 5,
+      "element": {
+        "location": "arlo-the-little-guy:arlrooms/fallback_room",
+        "processors": "minecraft:empty",
+        "projection": "rigid",
+        "element_type": "minecraft:single_pool_element"
+      }
+    }
+  ]
+}

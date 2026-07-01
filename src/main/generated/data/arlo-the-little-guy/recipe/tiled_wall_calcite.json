@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": "minecraft:calcite",
+    "Z": "minecraft:glass"
+  },
+  "pattern": [
+    "XZ",
+    "ZX"
+  ],
+  "result": {
+    "count": 4,
+    "id": "arlo-the-little-guy:tiled_wall"
+  }
+}

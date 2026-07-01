@@ -77,3 +77,11 @@ publishing {
 		// retrieving dependencies.
 	}
 }
+
+loom {
+	runs {
+		client {
+			vmArg "-DallowExperimentalSettings=true"
+		}
+	}
+}

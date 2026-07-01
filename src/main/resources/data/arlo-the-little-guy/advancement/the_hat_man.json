@@ -120,6 +120,21 @@
           }
         ]
       }
+    },
+    "has_prismarine_pipis": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arlo-the-little-guy:prismarine_pipis"
+            ],
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
     }
   },
   "requirements": [
@@ -129,6 +144,7 @@
       ["has_cowboy_hat"],
       ["has_top_hat"],
       ["has_sun_hat"],
-      ["has_crown"]
+      ["has_crown"],
+      ["has_prismarine_pipis"]
   ]
 }

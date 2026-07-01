@@ -227,7 +227,7 @@ public class MiniCactusBlock extends BaseEntityBlock {
         do {
             if (!var4.hasNext()) {
                 BlockState blockState2 = world.getBlockState(pos.below());
-                return (blockState2.is(BlockTags.SAND)) && !world.getBlockState(pos.above()).liquid();
+                return (blockState2.is(BlockTags.SAND) || blockState2.is(ModTags.Blocks.ARLROOMS_BLOCKS)) && !world.getBlockState(pos.above()).liquid();
             }
 
             direction = (Direction)var4.next();

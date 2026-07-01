@@ -7,6 +7,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import potatowolfie.arlo_the_little_guy.ArloTheLittleGuy;
@@ -15,10 +16,14 @@ import potatowolfie.arlo_the_little_guy.block.ModBlocks;
 public class ModConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> MINI_CACTUS = registerKey("mini_cactus");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ARLROOMS_ENTRANCE = registerKey("arlrooms_entrance");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         register(context, MINI_CACTUS, ModFeatures.ARLO_FEATURE,
                 new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.MINI_CACTUS))
+        );
+        register(context, ARLROOMS_ENTRANCE, ModFeatures.ARLROOMS_ENTRANCE_FEATURE,
+                NoneFeatureConfiguration.INSTANCE
         );
     }
 

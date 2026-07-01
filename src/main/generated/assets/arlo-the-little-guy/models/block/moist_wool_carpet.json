@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "arlo-the-little-guy:block/moist_wool"
+  }
+}

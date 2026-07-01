@@ -37,6 +37,12 @@
     "crown": {
       "trigger": "minecraft:impossible"
     },
+    "prismarine_pipis": {
+      "trigger": "minecraft:impossible"
+    },
+    "stop_sign": {
+      "trigger": "minecraft:impossible"
+    },
     "bucket": {
       "trigger": "minecraft:impossible"
     },
@@ -52,6 +58,8 @@
       ["top_hat"],
       ["sun_hat"],
       ["crown"],
+      ["stop_sign"],
+      ["prismarine_pipis"],
       ["bucket"],
       ["cactus_flower"]
   ],

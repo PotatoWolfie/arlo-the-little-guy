@@ -1,0 +1,48 @@
+{
+  "variants": {
+    "facing=east,tape=empty": { "model": "arlo-the-little-guy:block/cassette_tape_player_empty", "y": 90 },
+    "facing=north,tape=empty": { "model": "arlo-the-little-guy:block/cassette_tape_player_empty" },
+    "facing=south,tape=empty": { "model": "arlo-the-little-guy:block/cassette_tape_player_empty", "y": 180 },
+    "facing=west,tape=empty": { "model": "arlo-the-little-guy:block/cassette_tape_player_empty", "y": 270 },
+
+    "facing=east,tape=tape_1": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_1", "y": 90 },
+    "facing=north,tape=tape_1": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_1" },
+    "facing=south,tape=tape_1": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_1", "y": 180 },
+    "facing=west,tape=tape_1": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_1", "y": 270 },
+
+    "facing=east,tape=tape_2": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_2", "y": 90 },
+    "facing=north,tape=tape_2": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_2" },
+    "facing=south,tape=tape_2": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_2", "y": 180 },
+    "facing=west,tape=tape_2": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_2", "y": 270 },
+
+    "facing=east,tape=tape_3": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_3", "y": 90 },
+    "facing=north,tape=tape_3": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_3" },
+    "facing=south,tape=tape_3": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_3", "y": 180 },
+    "facing=west,tape=tape_3": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_3", "y": 270 },
+
+    "facing=east,tape=tape_4": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_4", "y": 90 },
+    "facing=north,tape=tape_4": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_4" },
+    "facing=south,tape=tape_4": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_4", "y": 180 },
+    "facing=west,tape=tape_4": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_4", "y": 270 },
+
+    "facing=east,tape=tape_5": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_5", "y": 90 },
+    "facing=north,tape=tape_5": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_5" },
+    "facing=south,tape=tape_5": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_5", "y": 180 },
+    "facing=west,tape=tape_5": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_5", "y": 270 },
+
+    "facing=east,tape=tape_6": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_6", "y": 90 },
+    "facing=north,tape=tape_6": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_6" },
+    "facing=south,tape=tape_6": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_6", "y": 180 },
+    "facing=west,tape=tape_6": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_6", "y": 270 },
+
+    "facing=east,tape=tape_7": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_7", "y": 90 },
+    "facing=north,tape=tape_7": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_7" },
+    "facing=south,tape=tape_7": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_7", "y": 180 },
+    "facing=west,tape=tape_7": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_7", "y": 270 },
+
+    "facing=east,tape=tape_8": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_8", "y": 90 },
+    "facing=north,tape=tape_8": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_8" },
+    "facing=south,tape=tape_8": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_8", "y": 180 },
+    "facing=west,tape=tape_8": { "model": "arlo-the-little-guy:block/cassette_tape_player_tape_8", "y": 270 }
+  }
+}

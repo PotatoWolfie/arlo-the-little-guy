@@ -1,0 +1,147 @@
+{
+  "display": {
+    "icon": {
+      "id": "arlo-the-little-guy:cassette_tape_7"
+    },
+    "title": {
+      "translate": "advancement.arlo-the-little-guy.connection_terminated.title"
+    },
+    "description": {
+      "translate": "advancement.arlo-the-little-guy.connection_terminated.description"
+    },
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "arlo-the-little-guy:arlrooms/a_burning_memory",
+  "criteria": {
+    "has_tape_1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arlo-the-little-guy:cassette_tape_1"
+            ],
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    },
+    "has_tape_2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arlo-the-little-guy:cassette_tape_2"
+            ],
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    },
+    "has_tape_3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arlo-the-little-guy:cassette_tape_3"
+            ],
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    },
+    "has_tape_4": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arlo-the-little-guy:cassette_tape_4"
+            ],
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    },
+    "has_tape_5": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arlo-the-little-guy:cassette_tape_5"
+            ],
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    },
+    "has_tape_6": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arlo-the-little-guy:cassette_tape_6"
+            ],
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    },
+    "has_tape_7": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "arlo-the-little-guy:cassette_tape_7"
+            ],
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_tape_1"
+    ],
+    [
+      "has_tape_2"
+    ],
+    [
+      "has_tape_3"
+    ],
+    [
+      "has_tape_4"
+    ],
+    [
+      "has_tape_5"
+    ],
+    [
+      "has_tape_6"
+    ],
+    [
+      "has_tape_7"
+    ]
+  ]
+}

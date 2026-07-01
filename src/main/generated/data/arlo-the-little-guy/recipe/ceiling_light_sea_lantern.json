@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:sea_lantern",
+    "minecraft:phantom_membrane"
+  ],
+  "result": {
+    "count": 16,
+    "id": "arlo-the-little-guy:ceiling_light"
+  }
+}

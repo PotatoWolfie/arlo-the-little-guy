@@ -1,6 +1,6 @@
 {
   "no_one_will_believe_you": {
-    "subtitle": "sounds.arlo-the-little-guy.no_one_will_believe_you",
+    "subtitle": "subtitles.arlo_the_little_guy.no_one_will_believe_you",
     "sounds": [
       "arlo-the-little-guy:no_one_will_believe_you_1",
       "arlo-the-little-guy:no_one_will_believe_you_2",
@@ -8,9 +8,85 @@
     ]
   },
   "april_fools_whisper": {
-    "subtitle": "sounds.arlo-the-little-guy.april_fools_whisper",
+    "subtitle": "subtitles.arlo_the_little_guy.april_fools_whisper",
     "sounds": [
       "arlo-the-little-guy:april_fools_whisper"
+    ]
+  },
+  "cassette_tape_insert": {
+    "subtitle": "subtitles.arlo_the_little_guy.cassette_tape_insert",
+    "sounds": [
+      "arlo-the-little-guy:cassette_tape_insert"
+    ]
+  },
+  "cassette_tape_eject": {
+    "subtitle": "subtitles.arlo_the_little_guy.cassette_tape_eject",
+    "sounds": [
+      "arlo-the-little-guy:cassette_tape_eject"
+    ]
+  },
+  "cassette_tape_1_audio": {
+    "sounds": [
+      {
+        "name": "arlo-the-little-guy:cassette_tape_1_audio",
+        "stream": true
+      }
+    ]
+  },
+  "cassette_tape_2_audio": {
+    "sounds": [
+      {
+        "name": "arlo-the-little-guy:cassette_tape_2_audio",
+        "stream": true
+      }
+    ]
+  },
+  "cassette_tape_3_audio": {
+    "sounds": [
+      {
+        "name": "arlo-the-little-guy:cassette_tape_3_audio",
+        "stream": true
+      }
+    ]
+  },
+  "cassette_tape_4_audio": {
+    "sounds": [
+      {
+        "name": "arlo-the-little-guy:cassette_tape_4_audio",
+        "stream": true
+      }
+    ]
+  },
+  "cassette_tape_5_audio": {
+    "sounds": [
+      {
+        "name": "arlo-the-little-guy:cassette_tape_5_audio",
+        "stream": true
+      }
+    ]
+  },
+  "cassette_tape_6_audio": {
+    "sounds": [
+      {
+        "name": "arlo-the-little-guy:cassette_tape_6_audio",
+        "stream": true
+      }
+    ]
+  },
+  "cassette_tape_7_audio": {
+    "sounds": [
+      {
+        "name": "arlo-the-little-guy:cassette_tape_7_audio",
+        "stream": true
+      }
+    ]
+  },
+  "arlrooms_ambience": {
+    "sounds": [
+      {
+        "name": "arlo-the-little-guy:arlrooms_ambience",
+        "stream": true
+      }
     ]
   }
 }

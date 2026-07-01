@@ -1,0 +1,65 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "arlo-the-little-guy:block/stop_sign_post",
+		"particle": "arlo-the-little-guy:block/stop_sign_post"
+	},
+	"elements": [
+		{
+			"from": [7, 0.001, 7],
+			"to": [9, 0.001, 9],
+			"faces": {
+				"up": {"uv": [5, 8.5, 4, 7.5], "texture": "#0"},
+				"down": {"uv": [6, 7.5, 5, 8.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 15.999, 7],
+			"to": [9, 15.999, 9],
+			"faces": {
+				"up": {"uv": [7, 8.5, 6, 7.5], "texture": "#0"},
+				"down": {"uv": [8, 7.5, 7, 8.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [8, 0, 7],
+			"to": [8, 16, 9],
+			"faces": {
+				"east": {"uv": [1, 7.5, 0, 15.5], "texture": "#0"},
+				"west": {"uv": [1, 7.5, 2, 15.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [7, 0, 8],
+			"to": [9, 16, 8],
+			"faces": {
+				"north": {"uv": [2, 7.5, 3, 15.5], "texture": "#0"},
+				"south": {"uv": [4, 7.5, 3, 15.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [0.5, 0.5, 7],
+			"to": [15.5, 15.5, 7.02],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0.5, 0.5, 5]},
+			"faces": {
+				"north": {"uv": [0, 0, 7.5, 7.5], "texture": "#0"},
+				"east": {"uv": [9.5, 11.5, 9.5, 11], "texture": "#0"},
+				"south": {"uv": [8, 0, 15.5, 7.5], "texture": "#0"},
+				"west": {"uv": [9.25, 11.5, 9.5, 11], "texture": "#0"},
+				"up": {"uv": [9.25, 11.5, 9.5, 11.5], "texture": "#0"},
+				"down": {"uv": [9, 11.5, 9.5, 11.5], "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "stop_sign",
+			"origin": [8, 8, 8],
+			"scope": 0,
+			"color": 0,
+			"children": [0, 1, 2, 3, 4]
+		}
+	]
+}

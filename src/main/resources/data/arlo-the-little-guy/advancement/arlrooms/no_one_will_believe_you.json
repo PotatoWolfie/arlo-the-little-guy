@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "id": "arlo-the-little-guy:cassette_tape_player"
+    },
+    "title": {
+      "translate": "advancement.arlo-the-little-guy.no_one_will_believe_you.title"
+    },
+    "description": {
+      "translate": "advancement.arlo-the-little-guy.no_one_will_believe_you.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "arlo-the-little-guy:arlrooms/connection_terminated",
+  "criteria": {
+    "tape_1": { "trigger": "minecraft:impossible" },
+    "tape_2": { "trigger": "minecraft:impossible" },
+    "tape_3": { "trigger": "minecraft:impossible" },
+    "tape_4": { "trigger": "minecraft:impossible" },
+    "tape_5": { "trigger": "minecraft:impossible" },
+    "tape_6": { "trigger": "minecraft:impossible" },
+    "tape_7": { "trigger": "minecraft:impossible" }
+  },
+  "requirements": [
+    ["tape_1"],
+    ["tape_2"],
+    ["tape_3"],
+    ["tape_4"],
+    ["tape_5"],
+    ["tape_6"],
+    ["tape_7"]
+  ]
+}

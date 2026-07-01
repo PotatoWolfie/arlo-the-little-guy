@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:diamond_pickaxe"
+    },
+    "title": {
+      "translate": "advancement.arlo-the-little-guy.let_me_out.title"
+    },
+    "description": {
+      "translate": "advancement.arlo-the-little-guy.let_me_out.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "arlo-the-little-guy:arlrooms/root",
+  "criteria": {
+    "let_me_out": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "let_me_out"
+    ]
+  ]
+}

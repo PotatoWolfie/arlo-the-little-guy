@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "id": "arlo-the-little-guy:no_clip_sand"
+    },
+    "title": {
+      "translate": "advancement.arlo-the-little-guy.the_arlrooms.title"
+    },
+    "description": {
+      "translate": "advancement.arlo-the-little-guy.the_arlrooms.description"
+    },
+    "background": "arlo-the-little-guy:block/cactus_wallpaper",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "enter_arlrooms": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "arlo-the-little-guy:arlrooms"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "enter_arlrooms"
+    ]
+  ]
+}

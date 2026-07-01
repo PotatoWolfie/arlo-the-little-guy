@@ -7,10 +7,15 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.levelgen.structure.Structure;
 import net.minecraft.world.level.levelgen.structure.StructureType;
 import potatowolfie.arlo_the_little_guy.ArloTheLittleGuy;
+import potatowolfie.arlo_the_little_guy.structure.arlrooms.ArlroomsStructure;
+import potatowolfie.arlo_the_little_guy.structure.cactus_monument.CactusMonumentStructure;
 
 public class ModStructureTypes {
     public static final StructureType<CactusMonumentStructure> CACTUS_MONUMENT =
             register("cactus_monument", CactusMonumentStructure.CODEC);
+
+    public static final StructureType<ArlroomsStructure> ARLROOMS =
+            register("arlrooms", ArlroomsStructure.CODEC);
 
     private static <S extends Structure> StructureType<S> register(
             String id,

@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:clock"
+    },
+    "title": {
+      "translate": "advancement.arlo-the-little-guy.day_after_day_after_day.title"
+    },
+    "description": {
+      "translate": "advancement.arlo-the-little-guy.day_after_day_after_day.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "arlo-the-little-guy:arlrooms/root",
+  "criteria": {
+    "day_after_day_after_day": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "day_after_day_after_day"
+    ]
+  ]
+}

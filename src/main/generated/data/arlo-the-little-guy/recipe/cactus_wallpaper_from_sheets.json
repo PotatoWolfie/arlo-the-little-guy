@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": "arlo-the-little-guy:cactus_wallpaper_sheet"
+  },
+  "pattern": [
+    "XX",
+    "XX"
+  ],
+  "result": {
+    "id": "arlo-the-little-guy:cactus_wallpaper"
+  }
+}

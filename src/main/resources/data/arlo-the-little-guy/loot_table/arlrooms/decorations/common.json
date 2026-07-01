@@ -1,0 +1,265 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "arlo-the-little-guy:bowler_hat",
+          "weight": 40
+        },
+        {
+          "type": "minecraft:item",
+          "name": "arlo-the-little-guy:cowboy_hat",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "arlo-the-little-guy:tricorn",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "arlo-the-little-guy:sun_hat",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "arlo-the-little-guy:top_hat",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "arlo-the-little-guy:straw_hat",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "arlo-the-little-guy:prismarine_pipis",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "arlo-the-little-guy:crown",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "arlo-the-little-guy:cactus_battery",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 2
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:sand",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 3,
+                "max": 6
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "arlo-the-little-guy:cactus_wallpaper_sheet",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 5
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bread",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:potato",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 0,
+                "max": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glass_bottle",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 4
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "arlo-the-little-guy:mini_cactus",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.2
+            }
+          ],
+          "functions": []
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "arlo-the-little-guy:cactus_flashlight",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.2
+            }
+          ],
+          "functions": []
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_pickaxe",
+          "weight": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.2
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.3,
+                "max": 0.75
+              },
+              "add": false,
+              "conditions": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "arlo-the-little-guy:cassette_tape_1",
+          "weight": 7
+        },
+        {
+          "type": "minecraft:item",
+          "name": "arlo-the-little-guy:cassette_tape_2",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "arlo-the-little-guy:cassette_tape_3",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "arlo-the-little-guy:cassette_tape_4",
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "arlo-the-little-guy:cassette_tape_5",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "arlo-the-little-guy:cassette_tape_6",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "arlo-the-little-guy:cassette_tape_7",
+          "weight": 1
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:random_chance",
+          "chance": 0.35
+        }
+      ]
+    }
+  ]
+}

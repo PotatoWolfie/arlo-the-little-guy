@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "flickering=false,lit=false": { "model": "arlo-the-little-guy:block/ceiling_light_off" },
+    "flickering=false,lit=true":  { "model": "arlo-the-little-guy:block/ceiling_light" },
+    "flickering=true,lit=false":  { "model": "arlo-the-little-guy:block/ceiling_light_off" },
+    "flickering=true,lit=true":   { "model": "arlo-the-little-guy:block/ceiling_light" }
+  }
+}

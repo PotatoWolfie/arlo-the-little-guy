@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "arlo-the-little-guy:block/no_clip_cactus_wallpaper"
+  }
+}

@@ -11,6 +11,7 @@ import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.equipment.Equippable;
 import potatowolfie.arlo_the_little_guy.ArloTheLittleGuy;
+import potatowolfie.arlo_the_little_guy.item.custom.CactusFlashlightItem;
 
 import java.util.List;
 
@@ -71,6 +72,40 @@ public class ModItems {
                                     .build())
                     .setId(createItemRegistryKey("crown"))));
 
+    public static final Item PRISMARINE_PIPIS = registerItem("prismarine_pipis",
+            new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .component(DataComponents.EQUIPPABLE,
+                            Equippable.builder(EquipmentSlot.HEAD)
+                                    .build())
+                    .setId(createItemRegistryKey("prismarine_pipis"))));
+
+    public static final Item CACTUS_FLASHLIGHT = registerItem("cactus_flashlight",
+            new CactusFlashlightItem(new Item.Properties()
+                    .stacksTo(1)
+                    .setId(createItemRegistryKey("cactus_flashlight"))));
+
+    public static final Item CACTUS_BATTERY = registerItem("cactus_battery",
+            new Item(new Item.Properties()
+                    .setId(createItemRegistryKey("cactus_battery"))));
+
+    public static final Item CASSETTE_TAPE_1 = registerItem("cassette_tape_1",
+            new Item(new Item.Properties().stacksTo(1).setId(createItemRegistryKey("cassette_tape_1"))));
+    public static final Item CASSETTE_TAPE_2 = registerItem("cassette_tape_2",
+            new Item(new Item.Properties().stacksTo(1).setId(createItemRegistryKey("cassette_tape_2"))));
+    public static final Item CASSETTE_TAPE_3 = registerItem("cassette_tape_3",
+            new Item(new Item.Properties().stacksTo(1).setId(createItemRegistryKey("cassette_tape_3"))));
+    public static final Item CASSETTE_TAPE_4 = registerItem("cassette_tape_4",
+            new Item(new Item.Properties().stacksTo(1).setId(createItemRegistryKey("cassette_tape_4"))));
+    public static final Item CASSETTE_TAPE_5 = registerItem("cassette_tape_5",
+            new Item(new Item.Properties().stacksTo(1).setId(createItemRegistryKey("cassette_tape_5"))));
+    public static final Item CASSETTE_TAPE_6 = registerItem("cassette_tape_6",
+            new Item(new Item.Properties().stacksTo(1).setId(createItemRegistryKey("cassette_tape_6"))));
+    public static final Item CASSETTE_TAPE_7 = registerItem("cassette_tape_7",
+            new Item(new Item.Properties().stacksTo(1).setId(createItemRegistryKey("cassette_tape_7"))));
+    public static final Item CASSETTE_TAPE_QUESTION = registerItem("cassette_tape_question",
+            new Item(new Item.Properties().stacksTo(1).rarity(Rarity.RARE).setId(createItemRegistryKey("cassette_tape_question"))));
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(BuiltInRegistries.ITEM, createItemRegistryKey(name), item);
     }
@@ -88,6 +123,7 @@ public class ModItems {
                             new ItemStack(ModItems.BOWLER_HAT)
                     ), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                 });
+
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
                 .register(output -> {
                     output.insertAfter(ModItems.BOWLER_HAT, List.of(
@@ -98,11 +134,39 @@ public class ModItems {
                             new ItemStack(ModItems.SUN_HAT)
                     ), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
                 });
+
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
                 .register(output -> {
                     output.insertBefore(Items.CARROT_ON_A_STICK, List.of(
-                            new ItemStack(ModItems.CROWN)
+                            new ItemStack(ModItems.CROWN),
+                            new ItemStack(ModItems.PRISMARINE_PIPIS)
                     ), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+                });
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS)
+                .register(output -> {
+                    output.insertBefore(Items.REDSTONE, List.of(
+                            new ItemStack(ModItems.CACTUS_BATTERY)
+                    ), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+                });
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
+                .register(output -> {
+                    output.insertBefore(Items.SPYGLASS, List.of(
+                            new ItemStack(ModItems.CACTUS_FLASHLIGHT)
+                    ), CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS);
+                });
+
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.TOOLS_AND_UTILITIES)
+                .register(output -> {
+                    output.accept(new ItemStack(ModItems.CASSETTE_TAPE_1));
+                    output.accept(new ItemStack(ModItems.CASSETTE_TAPE_2));
+                    output.accept(new ItemStack(ModItems.CASSETTE_TAPE_3));
+                    output.accept(new ItemStack(ModItems.CASSETTE_TAPE_4));
+                    output.accept(new ItemStack(ModItems.CASSETTE_TAPE_5));
+                    output.accept(new ItemStack(ModItems.CASSETTE_TAPE_6));
+                    output.accept(new ItemStack(ModItems.CASSETTE_TAPE_7));
+                    output.accept(new ItemStack(ModItems.CASSETTE_TAPE_QUESTION));
                 });
     }
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "arlo-the-little-guy:block/blue_tiled_wall"
+  }
+}

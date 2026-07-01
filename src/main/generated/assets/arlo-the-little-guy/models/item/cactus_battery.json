@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "arlo-the-little-guy:item/cactus_battery"
+  }
+}

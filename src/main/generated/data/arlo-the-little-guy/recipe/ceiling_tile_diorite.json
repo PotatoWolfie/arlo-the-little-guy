@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": "minecraft:diorite",
+    "Z": "minecraft:paper"
+  },
+  "pattern": [
+    "ZZ",
+    "XX"
+  ],
+  "result": {
+    "count": 2,
+    "id": "arlo-the-little-guy:ceiling_tile"
+  }
+}

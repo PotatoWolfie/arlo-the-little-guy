@@ -1,0 +1,13 @@
+{
+  "asset_id": "arlo-the-little-guy:arlrooms_cactus_hallway",
+  "author": {
+    "color": "gray",
+    "translate": "painting.arlo-the-little-guy.arlrooms_cactus_hallway.author"
+  },
+  "height": 2,
+  "title": {
+    "color": "yellow",
+    "translate": "painting.arlo-the-little-guy.arlrooms_cactus_hallway.title"
+  },
+  "width": 3
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "X": "arlo-the-little-guy:moist_wool"
+  },
+  "pattern": [
+    "XX"
+  ],
+  "result": {
+    "count": 3,
+    "id": "arlo-the-little-guy:moist_wool_carpet"
+  }
+}

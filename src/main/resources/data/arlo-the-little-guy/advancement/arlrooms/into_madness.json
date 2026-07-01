@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "arlo-the-little-guy:mini_cactus"
+    },
+    "title": {
+      "translate": "advancement.arlo-the-little-guy.into_madness.title"
+    },
+    "description": {
+      "translate": "advancement.arlo-the-little-guy.into_madness.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "arlo-the-little-guy:arlrooms/root",
+  "criteria": {
+    "into_madness": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "into_madness"
+    ]
+  ]
+}

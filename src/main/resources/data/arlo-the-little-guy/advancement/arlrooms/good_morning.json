@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:grass_block"
+    },
+    "title": {
+      "translate": "advancement.arlo-the-little-guy.good_morning.title"
+    },
+    "description": {
+      "translate": "advancement.arlo-the-little-guy.good_morning.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "arlo-the-little-guy:arlrooms/root",
+  "criteria": {
+    "exit_arlrooms": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "from": "arlo-the-little-guy:arlrooms",
+        "to": "minecraft:overworld"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "exit_arlrooms"
+    ]
+  ]
+}

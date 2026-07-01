@@ -1,0 +1,12 @@
+{
+  "type": "arlo-the-little-guy:arlrooms_type",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "minecraft:the_void",
+      "layers": [
+
+      ]
+    }
+  }
+}

@@ -13,5 +13,10 @@ public class ModBiomeModifications {
                 GenerationStep.Decoration.VEGETAL_DECORATION,
                 ModPlacedFeatures.PATCH_MINI_CACTUS_DESERT_PLACED
         );
+        BiomeModifications.addFeature(
+                BiomeSelectors.includeByKey(Biomes.DESERT),
+                GenerationStep.Decoration.VEGETAL_DECORATION,
+                ModPlacedFeatures.ARLROOMS_ENTRANCE_PLACED
+        );
     }
 }

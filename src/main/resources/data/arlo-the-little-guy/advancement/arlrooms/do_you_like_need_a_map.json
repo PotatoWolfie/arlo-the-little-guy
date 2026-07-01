@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:map"
+    },
+    "title": {
+      "translate": "advancement.arlo-the-little-guy.do_you_like_need_a_map.title"
+    },
+    "description": {
+      "translate": "advancement.arlo-the-little-guy.do_you_like_need_a_map.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "arlo-the-little-guy:arlrooms/day_after_day_after_day",
+  "criteria": {
+    "do_you_like_need_a_map": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "requirements": [
+    [
+      "do_you_like_need_a_map"
+    ]
+  ]
+}

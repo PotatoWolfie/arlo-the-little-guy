@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "arlo-the-little-guy:block/wall_cactus_player_head"
+    },
+    "facing=south": {
+      "model": "arlo-the-little-guy:block/wall_cactus_player_head",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "arlo-the-little-guy:block/wall_cactus_player_head",
+      "y": 270
+    },
+    "facing=east": {
+      "model": "arlo-the-little-guy:block/wall_cactus_player_head",
+      "y": 90
+    }
+  }
+}

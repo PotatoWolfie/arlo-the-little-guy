@@ -16,6 +16,8 @@ public class HatTrickHandler {
             "arlo-the-little-guy:top_hat",
             "arlo-the-little-guy:sun_hat",
             "arlo-the-little-guy:crown",
+            "arlo-the-little-guy:stop_sign",
+            "arlo-the-little-guy:prismarine_pipis",
             "minecraft:bucket",
             "minecraft:cactus_flower"
     };

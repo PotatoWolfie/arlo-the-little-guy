@@ -21,5 +21,8 @@ public class ModBlockTagProvider extends FabricTagsProvider.BlockTagsProvider {
 
         builder(BlockTags.ENDERMAN_HOLDABLE)
                 .add(BuiltInRegistries.BLOCK.wrapAsHolder(ModBlocks.MINI_CACTUS).unwrapKey().orElseThrow());
+
+        builder(BlockTags.SAND)
+                .add(BuiltInRegistries.BLOCK.wrapAsHolder(ModBlocks.NO_CLIP_SAND).unwrapKey().orElseThrow());
     }
 }

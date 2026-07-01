@@ -3,8 +3,13 @@
   "package": "potatowolfie.arlo_the_little_guy.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "BlockItemMixin",
+    "BlockLightEngineMixin",
+    "BlockStateMixin",
     "ExampleMixin",
+    "HorseMixin",
     "PigEntityMixin",
+    "ServerPlayerGameModeMixin",
     "SnowGolemEntityMixin",
     "SuppressMiniCactusWarningMixin"
   ],
