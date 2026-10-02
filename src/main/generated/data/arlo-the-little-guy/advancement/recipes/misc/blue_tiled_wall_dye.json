@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "arlo-the-little-guy:blue_tiled_wall_dye"
+        "recipes": "arlo-the-little-guy:blue_tiled_wall_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

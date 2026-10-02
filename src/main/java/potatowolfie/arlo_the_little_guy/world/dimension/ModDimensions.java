@@ -6,6 +6,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TimelineTags;
+import net.minecraft.util.ARGB;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.world.attribute.*;
 import net.minecraft.world.level.CardinalLighting;
@@ -49,16 +50,16 @@ public class ModDimensions {
                 CardinalLighting.Type.DEFAULT,
                 EnvironmentAttributeMap.builder()
                         .set(EnvironmentAttributes.STAR_BRIGHTNESS, 0.0f)
-                        .set(EnvironmentAttributes.SKY_COLOR, 0xFFEDAC)
-                        .set(EnvironmentAttributes.FOG_COLOR, 0x312609)
-                        .set(EnvironmentAttributes.SUNRISE_SUNSET_COLOR, 0x312609)
+                        .set(EnvironmentAttributes.SKY_COLOR, ARGB.vector3fFromRGB24(0xFFEDAC))
+                        .set(EnvironmentAttributes.FOG_COLOR, ARGB.vector3fFromRGB24(0x312609))
+                        .set(EnvironmentAttributes.SUNRISE_SUNSET_COLOR, ARGB.vector4fFromARGB32(0x00312609))
                         .set(EnvironmentAttributes.FOG_START_DISTANCE, 18F)
                         .set(EnvironmentAttributes.FOG_END_DISTANCE, 48F)
-                        .set(EnvironmentAttributes.CLOUD_COLOR, 0x000000)
+                        .set(EnvironmentAttributes.CLOUD_COLOR, ARGB.vector4fFromARGB32(0x00000000))
                         .set(EnvironmentAttributes.BACKGROUND_MUSIC, BackgroundMusic.EMPTY)
                         .set(EnvironmentAttributes.AMBIENT_SOUNDS, AmbientSounds.EMPTY)
-                        .set(EnvironmentAttributes.AMBIENT_LIGHT_COLOR, 0x000000)
-                        .set(EnvironmentAttributes.BLOCK_LIGHT_TINT, 0xFFE67A)
+                        .set(EnvironmentAttributes.AMBIENT_LIGHT_COLOR, ARGB.vector3fFromRGB24(0x000000))
+                        .set(EnvironmentAttributes.BLOCK_LIGHT_TINT, ARGB.vector3fFromRGB24(0xFFE67A))
                         .set(EnvironmentAttributes.BED_RULE, BedRule.CAN_SLEEP_WHEN_DARK)
                         .build(),
                 timelines.getOrThrow(TimelineTags.UNIVERSAL),

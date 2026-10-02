@@ -1,38 +1,34 @@
 package potatowolfie.arlo_the_little_guy.world.feature.custom;
 
-import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluids;
-import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
-import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 import potatowolfie.arlo_the_little_guy.block.ModBlocks;
 import potatowolfie.arlo_the_little_guy.block.custom.MiniCactusBlock;
 import potatowolfie.arlo_the_little_guy.block.entity.ArloBlockEntity;
 
-public class ArlroomsEntranceFeature extends Feature<NoneFeatureConfiguration> {
+public record ArlroomsEntranceFeature() implements Feature {
+    public static final MapCodec<ArlroomsEntranceFeature> CODEC = MapCodec.unit(ArlroomsEntranceFeature::new);
 
     private static boolean isCorner(int dx, int dz) {
         return Math.abs(dx) == 2 && Math.abs(dz) == 2;
     }
 
-    public ArlroomsEntranceFeature(Codec<NoneFeatureConfiguration> codec) {
-        super(codec);
+    public MapCodec<ArlroomsEntranceFeature> codec() {
+        return CODEC;
     }
 
     @Override
-    public boolean place(FeaturePlaceContext<NoneFeatureConfiguration> context) {
-        WorldGenLevel world = context.level();
-        BlockPos origin = context.origin();
-        RandomSource random = context.random();
-
+    public boolean place(WorldGenLevel world, ChunkGenerator chunkGenerator, RandomSource random, BlockPos origin) {
         FluidState fluidAtOrigin = world.getFluidState(origin);
         FluidState fluidBelow = world.getFluidState(origin.below());
         if (fluidAtOrigin.is(Fluids.WATER) || fluidAtOrigin.is(Fluids.FLOWING_WATER)

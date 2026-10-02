@@ -9,7 +9,7 @@
 		"PotatoWolfie"
 	],
 	"contact": {
-		"homepage": "https://potatowolfie.github.io/arlo-the-little-guy.html",
+		"homepage": "https://potatowolfie.github.io/Arlo_The_Little_Guy/",
 		"sources": "https://github.com/PotatoWolfie/arlo-the-little-guy",
 		"issues": "https://github.com/PotatoWolfie/arlo-the-little-guy/issues"
 	},
@@ -32,7 +32,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.18.2",
-		"minecraft": "26.2",
+		"minecraft": "26.3",
 		"java": ">=25",
 		"fabric-api": "*"
 	},
@@ -41,7 +41,7 @@
 			"links": {
 				"modmenu.modrinth": "https://modrinth.com/mod/arlo-the-little-guy",
 				"modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/arlo-the-little-guy",
-				"modmenu.wiki": "https://potatowolfie.github.io/arlo-the-little-guy.html",
+				"modmenu.wiki": "https://potatowolfie.github.io/Arlo_The_Little_Guy/",
 				"modmenu.planet_minecraft": "https://www.planetminecraft.com/mod/arlo-the-little-guy"
 			},
 			"update_checker": true

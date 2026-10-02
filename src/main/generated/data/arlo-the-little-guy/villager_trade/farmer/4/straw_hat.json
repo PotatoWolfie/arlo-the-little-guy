@@ -1,0 +1,16 @@
+{
+  "additional_wants": {
+    "count": 5,
+    "id": "minecraft:emerald"
+  },
+  "gives": {
+    "id": "arlo-the-little-guy:straw_hat"
+  },
+  "max_uses": 5,
+  "reputation_discount": 0.05,
+  "wants": {
+    "count": 10,
+    "id": "minecraft:wheat"
+  },
+  "xp": 2
+}

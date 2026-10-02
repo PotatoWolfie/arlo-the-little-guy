@@ -1,0 +1,23 @@
+// 26.3	-999999999-01-01T00:00:00	Arlo the Little Guy/The 'don't cook arlo' recipes
+1d5119d1266ed78d668dc48fb00f421d0bd9235b data/arlo-the-little-guy/advancement/recipes/food/green_dye_from_smelting.json
+e9de59e9e62f68da706a510fb2af46d0f307f205 data/arlo-the-little-guy/advancement/recipes/misc/blue_tiled_wall_dye.json
+dca51681130183d78165dc4d5ea9f1b35bfe26b0 data/arlo-the-little-guy/advancement/recipes/misc/blue_tiled_wall_slab_dye.json
+939146bafae5924945ff0af832b8a16bcb233edf data/arlo-the-little-guy/advancement/recipes/misc/blue_tiled_wall_stairs_dye.json
+7f62f39b04951de17837b06a470bd9421ed47467 data/arlo-the-little-guy/advancement/recipes/misc/cactus_wallpaper_from_sheets.json
+913f8b3a4ebf5e2856862e6dc3e63bf25d3e01d3 data/arlo-the-little-guy/advancement/recipes/misc/ceiling_light_sea_lantern.json
+96ad86db694f195f1f0ba9bf4d1582fffb1bfcdd data/arlo-the-little-guy/advancement/recipes/misc/ceiling_tile_diorite.json
+8fbb39df31eb215bde5e48e00d5206674bc473d1 data/arlo-the-little-guy/advancement/recipes/misc/moist_carpet_from_wool.json
+832bd45ed1ee8e393aaab5844ebb26d6af07d1c6 data/arlo-the-little-guy/advancement/recipes/misc/moist_wool_from_carpet.json
+42e76579ab860b2f30f51da236d059f254c2c156 data/arlo-the-little-guy/advancement/recipes/misc/striped_tiled_wall_orange.json
+c96db7c7b680740b0efdd58700aba8b91339881b data/arlo-the-little-guy/advancement/recipes/misc/tiled_wall_calcite.json
+2f2e330324ae8c4867d75e3709c4b0539741ea40 data/arlo-the-little-guy/recipe/blue_tiled_wall_dye.json
+6db283129d68c46e4c927df06f8489ba0483d5dd data/arlo-the-little-guy/recipe/blue_tiled_wall_slab_dye.json
+9e24d7b35e04f67aaa10bc4ee8dc6065897b6829 data/arlo-the-little-guy/recipe/blue_tiled_wall_stairs_dye.json
+ad3fc1cfb84a976e3171e24bbdda9b34fee8e562 data/arlo-the-little-guy/recipe/cactus_wallpaper_from_sheets.json
+762e9dff0331bc408a340f396100de4e3d3573be data/arlo-the-little-guy/recipe/ceiling_light_sea_lantern.json
+8c940b3c71ebef69f33967302a85aab05b923e53 data/arlo-the-little-guy/recipe/ceiling_tile_diorite.json
+ddccc027b12121ed3a464b3b519cd2987bf9de94 data/arlo-the-little-guy/recipe/green_dye_from_smelting.json
+ba192b2a0f9a782101b90d8948a5bf0145ef3972 data/arlo-the-little-guy/recipe/moist_carpet_from_wool.json
+20a5da6cf1d92d932510b61f0a7f901c0a1f01b1 data/arlo-the-little-guy/recipe/moist_wool_from_carpet.json
+aa8542808b9cb1ac6b4445ba6a37df6e7d5433a6 data/arlo-the-little-guy/recipe/striped_tiled_wall_orange.json
+1c852125fc44d1815be87b7bb5e250970368bb89 data/arlo-the-little-guy/recipe/tiled_wall_calcite.json

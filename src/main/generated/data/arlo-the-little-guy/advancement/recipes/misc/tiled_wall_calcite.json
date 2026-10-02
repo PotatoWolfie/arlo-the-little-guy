@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "arlo-the-little-guy:tiled_wall_calcite"
+        "recipes": "arlo-the-little-guy:tiled_wall_calcite"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -12,7 +12,6 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class CactusWallpaperSheetBlock extends MultifaceBlock {
-    public static final MapCodec<CactusWallpaperSheetBlock> CODEC = simpleCodec(CactusWallpaperSheetBlock::new);
 
     private static final VoxelShape DOWN_SHAPE = Block.box(0.0, 0.0, 0.0, 16.0, 1.0, 16.0);
     private static final VoxelShape UP_SHAPE = Block.box(0.0, 15.0, 0.0, 16.0, 16.0, 16.0);
@@ -23,11 +22,6 @@ public class CactusWallpaperSheetBlock extends MultifaceBlock {
 
     public CactusWallpaperSheetBlock(Properties properties) {
         super(properties);
-    }
-
-    @Override
-    public MapCodec<CactusWallpaperSheetBlock> codec() {
-        return CODEC;
     }
 
     @Override

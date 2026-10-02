@@ -3,18 +3,21 @@ package potatowolfie.arlo_the_little_guy;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerChunkEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
+import net.fabricmc.fabric.api.item.v1.DefaultItemComponentEvents;
 import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.particle.v1.FabricParticleTypes;
-import net.fabricmc.fabric.api.registry.CompostableRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.Identifier;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.component.Compostable;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.chunk.LevelChunk;
@@ -22,6 +25,7 @@ import net.minecraft.world.level.levelgen.structure.BoundingBox;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockIgnoreProcessor;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
+import net.minecraft.world.level.storage.loot.providers.number.ints.ResolvableInt;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.core.Filter;
 import org.apache.logging.log4j.core.LogEvent;
@@ -126,7 +130,12 @@ public class ArloTheLittleGuy implements ModInitializer {
 		System.out.println("Registering Arlrooms for " + MOD_ID);
 		var levelKey = ModDimensions.ARLROOMS_LEVEL_KEY;
 
-		CompostableRegistry.INSTANCE.add(ModBlocks.MINI_CACTUS, 0.5f);
+		DefaultItemComponentEvents.MODIFY.register(modifyContext -> {
+			modifyContext.modify(Item.byBlock(ModBlocks.MINI_CACTUS), builder -> {
+				builder.set(DataComponents.COMPOSTABLE,
+						new Compostable(new ResolvableInt.Constant(1*100)));
+			});
+		});
 
 		LOGGER.info("CACTUS");
 	}
@@ -141,7 +150,7 @@ public class ArloTheLittleGuy implements ModInitializer {
 		Identifier id = Identifier.parse("arlo-the-little-guy:arlrooms/starter_room");
 
 		StructureTemplate template = level.getServer()
-				.getStructureManager()
+				.getStructureTemplateManager()
 				.getOrCreate(id);
 
 		StructurePlaceSettings settings = new StructurePlaceSettings()

@@ -5,39 +5,35 @@ import com.mojang.serialization.codecs.RecordCodecBuilder;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.level.WorldGenLevel;
+import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
-import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProviderType;
 import potatowolfie.arlo_the_little_guy.block.custom.MiniCactusBlock;
 
-public class RandomDirectionBlockStateProvider extends BlockStateProvider {
+public record RandomDirectionBlockStateProvider(BlockStateProvider source) implements BlockStateProvider {
     public static final MapCodec<RandomDirectionBlockStateProvider> CODEC =
             RecordCodecBuilder.mapCodec(instance ->
                     instance.group(
-                            BlockStateProvider.CODEC.fieldOf("source").forGetter(provider -> provider.source)
+                            BlockStateProvider.DIRECT_CODEC.fieldOf("source")
+                                    .forGetter(RandomDirectionBlockStateProvider::source)
                     ).apply(instance, RandomDirectionBlockStateProvider::new)
             );
 
-    private final BlockStateProvider source;
+    private static final Direction[] HORIZONTALS = {
+            Direction.NORTH, Direction.EAST, Direction.SOUTH, Direction.WEST
+    };
 
-    public RandomDirectionBlockStateProvider(BlockStateProvider source) {
-        this.source = source;
+    @Override
+    public MapCodec<? extends BlockStateProvider> codec() {
+        return CODEC;
     }
 
     @Override
-    protected BlockStateProviderType<?> type() {
-        return ModBlockStateProviderTypes.RANDOM_DIRECTION;
-    }
-
-    @Override
-    public BlockState getState(WorldGenLevel level, RandomSource random, BlockPos pos) {
+    public BlockState getState(LevelAccessor level, RandomSource random, BlockPos pos) {
         BlockState state = this.source.getState(level, random, pos);
 
         if (state.hasProperty(MiniCactusBlock.FACING)) {
-            Direction[] horizontalDirections = {Direction.NORTH, Direction.EAST, Direction.SOUTH, Direction.WEST};
-            Direction randomDirection = horizontalDirections[random.nextInt(horizontalDirections.length)];
-            state = state.setValue(MiniCactusBlock.FACING, randomDirection);
+            state = state.setValue(MiniCactusBlock.FACING, HORIZONTALS[random.nextInt(HORIZONTALS.length)]);
         }
 
         return state;

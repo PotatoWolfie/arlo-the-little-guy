@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "arlo-the-little-guy:ceiling_light_sea_lantern"
+        "recipes": "arlo-the-little-guy:ceiling_light_sea_lantern"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

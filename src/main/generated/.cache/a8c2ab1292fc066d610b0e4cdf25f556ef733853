@@ -1,0 +1,15 @@
+// 26.3	-999999999-01-01T00:00:00	Arlo the Little Guy/Block Loot Tables
+06ce4d028f07e265e8b372284793d1dd1ffa1069 data/arlo-the-little-guy/loot_table/blocks/cactus_wallpaper.json
+562e1b12c7a75f8b3110e6e81039b28ccad639fd data/arlo-the-little-guy/loot_table/blocks/cactus_wallpaper_slab.json
+1419ea56efd437f7d259b14c874174d776150b47 data/arlo-the-little-guy/loot_table/blocks/cactus_wallpaper_stairs.json
+776f9f1ffcb97672e0626439b359a1aeffeed470 data/arlo-the-little-guy/loot_table/blocks/ceiling_light.json
+eb4a52fe1752d366d7e37f5245cb56e7a1792895 data/arlo-the-little-guy/loot_table/blocks/ceiling_tile.json
+0179fc454eca787457e762b30d97c7708c98f2ed data/arlo-the-little-guy/loot_table/blocks/chiseled_arlo_sandstone.json
+121a830c233c43b5aab2965e5b66bf52c52a0bcb data/arlo-the-little-guy/loot_table/blocks/mini_cactus.json
+9afac87f009f8a7e9eb868e0b8d21d352bec6edf data/arlo-the-little-guy/loot_table/blocks/moist_wool.json
+653332ee6625906c5dd1c2dcc96c0e7de217b9e7 data/arlo-the-little-guy/loot_table/blocks/moist_wool_slab.json
+968c3169d41cafdcd410416660875d68583ab79b data/arlo-the-little-guy/loot_table/blocks/moist_wool_stairs.json
+9bc4a6916548dce4353a41d9d3f526395b2badcd data/arlo-the-little-guy/loot_table/blocks/no_clip_cactus_wallpaper.json
+4b2db958f3bbd99512be60617f137a8810e3fd65 data/arlo-the-little-guy/loot_table/blocks/no_clip_ceiling_tile.json
+5cf684ab9502b2f8b448fd077c34b04ddee180f9 data/arlo-the-little-guy/loot_table/blocks/no_clip_moist_wool.json
+0de4249637206e9f7fba5ce204af9aa04be2fc06 data/arlo-the-little-guy/loot_table/blocks/no_clip_sand.json

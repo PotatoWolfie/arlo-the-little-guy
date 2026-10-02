@@ -13,6 +13,7 @@ import net.minecraft.client.renderer.entity.state.PigRenderState;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.ItemStack;
+import org.joml.Matrix4f;
 import potatowolfie.arlo_the_little_guy.item.ModItems;
 
 @Environment(EnvType.CLIENT)
@@ -48,13 +49,13 @@ public class PigCrownRenderer extends RenderLayer<PigRenderState, PigModel> {
         );
 
         if (pigHead.zRot != 0.0F) {
-            poseStack.mulPose(Axis.ZP.rotation(pigHead.zRot));
+            poseStack.mulPose(new Matrix4f().rotation(Axis.ZP.rotationDegrees(pigHead.zRot)));
         }
         if (pigHead.yRot != 0.0F) {
-            poseStack.mulPose(Axis.YP.rotation(pigHead.yRot));
+            poseStack.mulPose(new Matrix4f().rotation(Axis.YP.rotationDegrees(pigHead.yRot)));
         }
         if (pigHead.xRot != 0.0F) {
-            poseStack.mulPose(Axis.XP.rotation(pigHead.xRot));
+            poseStack.mulPose(new Matrix4f().rotation(Axis.XP.rotationDegrees(pigHead.xRot)));
         }
 
         submitNodeCollector.submitModelPart(

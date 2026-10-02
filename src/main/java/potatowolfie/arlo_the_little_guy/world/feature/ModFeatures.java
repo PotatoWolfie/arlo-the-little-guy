@@ -1,29 +1,23 @@
 package potatowolfie.arlo_the_little_guy.world.feature;
 
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.Identifier;
-import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
-import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import potatowolfie.arlo_the_little_guy.ArloTheLittleGuy;
 import potatowolfie.arlo_the_little_guy.world.feature.custom.ArloFeature;
 import potatowolfie.arlo_the_little_guy.world.feature.custom.ArlroomsEntranceFeature;
 
 public class ModFeatures {
-    public static final Feature<SimpleBlockConfiguration> ARLO_FEATURE =
-            Registry.register(
-                    BuiltInRegistries.FEATURE,
+    public static final MapCodec<ArloFeature> ARLO_FEATURE =
+            Registry.register(BuiltInRegistries.FEATURE_TYPE,
                     Identifier.fromNamespaceAndPath(ArloTheLittleGuy.MOD_ID, "arlo_feature"),
-                    new ArloFeature(SimpleBlockConfiguration.CODEC)
-            );
+                    ArloFeature.CODEC);
 
-    public static final Feature<NoneFeatureConfiguration> ARLROOMS_ENTRANCE_FEATURE =
-            Registry.register(
-                    BuiltInRegistries.FEATURE,
+    public static final MapCodec<ArlroomsEntranceFeature> ARLROOMS_ENTRANCE_FEATURE =
+            Registry.register(BuiltInRegistries.FEATURE_TYPE,
                     Identifier.fromNamespaceAndPath(ArloTheLittleGuy.MOD_ID, "arlrooms_entrance_feature"),
-                    new ArlroomsEntranceFeature(NoneFeatureConfiguration.CODEC)
-            );
+                    ArlroomsEntranceFeature.CODEC);
 
     public static void registerFeatures() {
         ArloTheLittleGuy.LOGGER.info("Registering Features for " + ArloTheLittleGuy.MOD_ID);

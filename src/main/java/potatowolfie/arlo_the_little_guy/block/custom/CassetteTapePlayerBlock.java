@@ -6,6 +6,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.Prediction;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
@@ -44,10 +45,6 @@ public class CassetteTapePlayerBlock extends BaseEntityBlock {
     public static final EnumProperty<TapeType> TAPE = EnumProperty.create("tape", TapeType.class);
 
     public static final EnumProperty<Direction> FACING = BlockStateProperties.HORIZONTAL_FACING;
-
-    public static final MapCodec<CassetteTapePlayerBlock> CODEC = RecordCodecBuilder.mapCodec(instance ->
-            instance.group(propertiesCodec()).apply(instance, CassetteTapePlayerBlock::new)
-    );
 
     private static final VoxelShape SHAPE_NORTH =
             Block.box(
@@ -101,11 +98,6 @@ public class CassetteTapePlayerBlock extends BaseEntityBlock {
     @Override
     protected VoxelShape getCollisionShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
         return SHAPES.get(state.getValue(FACING));
-    }
-
-    @Override
-    protected MapCodec<? extends BaseEntityBlock> codec() {
-        return CODEC;
     }
 
     public CassetteTapePlayerBlock(Properties properties) {
@@ -187,7 +179,7 @@ public class CassetteTapePlayerBlock extends BaseEntityBlock {
         TapeType currentTape = state.getValue(TAPE);
         Item dropItem = getItemFromTapeType(currentTape);
         if (dropItem != null) {
-            player.getInventory().placeItemBackInInventory(new ItemStack(dropItem));
+            player.getInventory().placeItemBackInInventory(new ItemStack(dropItem), Prediction.SERVER_ONLY);
         }
 
         BlockEntity be = level.getBlockEntity(pos);

@@ -5,7 +5,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
-import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
+import net.minecraft.world.level.storage.loot.providers.number.ints.ContextIntProviders;
 import potatowolfie.arlo_the_little_guy.item.ModItems;
 
 public class ModLootTableModifier {
@@ -25,28 +25,28 @@ public class ModLootTableModifier {
                     id.equals(Identifier.fromNamespaceAndPath("minecraft", "chests/village/village_temple"))) {
 
                 LootPool.Builder poolBuilder = LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1))
+                        .setRolls(ContextIntProviders.exactly(1))
                         .when(net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition.randomChance(0.07f))
                         .add(LootItem.lootTableItem(ModItems.BOWLER_HAT)
-                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))));
+                                .apply(SetItemCountFunction.setCount(ContextIntProviders.exactly(1))));
                 tableBuilder.withPool(poolBuilder);
             }
 
             if (id.equals(Identifier.fromNamespaceAndPath("minecraft", "chests/desert_pyramid"))) {
                 LootPool.Builder poolBuilder = LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1))
+                        .setRolls(ContextIntProviders.exactly(1))
                         .when(net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition.randomChance(0.08f))
                         .add(LootItem.lootTableItem(ModItems.COWBOY_HAT)
-                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))));
+                                .apply(SetItemCountFunction.setCount(ContextIntProviders.exactly(1))));
                 tableBuilder.withPool(poolBuilder);
             }
 
             if (id.equals(Identifier.fromNamespaceAndPath("minecraft", "chests/bastion_treasure"))) {
                 LootPool.Builder poolBuilder = LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1))
+                        .setRolls(ContextIntProviders.exactly(1))
                         .when(net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition.randomChance(0.06f))
                         .add(LootItem.lootTableItem(ModItems.CROWN)
-                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))));
+                                .apply(SetItemCountFunction.setCount(ContextIntProviders.exactly(1))));
                 tableBuilder.withPool(poolBuilder);
             }
 
@@ -61,19 +61,19 @@ public class ModLootTableModifier {
                     id.equals(Identifier.fromNamespaceAndPath("minecraft", "chests/village/village_temple"))) {
 
                 LootPool.Builder poolBuilder = LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1))
+                        .setRolls(ContextIntProviders.exactly(1))
                         .when(net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition.randomChance(0.05f))
                         .add(LootItem.lootTableItem(ModItems.STRAW_HAT)
-                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))));
+                                .apply(SetItemCountFunction.setCount(ContextIntProviders.exactly(1))));
                 tableBuilder.withPool(poolBuilder);
             }
 
             if (id.equals(Identifier.fromNamespaceAndPath("minecraft", "chests/village/village_desert_house"))) {
                 LootPool.Builder poolBuilder = LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1))
+                        .setRolls(ContextIntProviders.exactly(1))
                         .when(net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition.randomChance(0.10f))
                         .add(LootItem.lootTableItem(ModItems.SUN_HAT)
-                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))));
+                                .apply(SetItemCountFunction.setCount(ContextIntProviders.exactly(1))));
                 tableBuilder.withPool(poolBuilder);
             }
 
@@ -82,10 +82,10 @@ public class ModLootTableModifier {
                     id.equals(Identifier.fromNamespaceAndPath("minecraft", "chests/woodland_mansion"))) {
 
                 LootPool.Builder poolBuilder = LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1))
+                        .setRolls(ContextIntProviders.exactly(1))
                         .when(net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition.randomChance(0.07f))
                         .add(LootItem.lootTableItem(ModItems.TOP_HAT)
-                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))));
+                                .apply(SetItemCountFunction.setCount(ContextIntProviders.exactly(1))));
                 tableBuilder.withPool(poolBuilder);
             }
 
@@ -94,19 +94,19 @@ public class ModLootTableModifier {
                     id.equals(Identifier.fromNamespaceAndPath("minecraft", "chests/shipwreck_supply"))) {
 
                 LootPool.Builder poolBuilder = LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1))
+                        .setRolls(ContextIntProviders.exactly(1))
                         .when(net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition.randomChance(0.12f))
                         .add(LootItem.lootTableItem(ModItems.TRICORN)
-                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))));
+                                .apply(SetItemCountFunction.setCount(ContextIntProviders.exactly(1))));
                 tableBuilder.withPool(poolBuilder);
             }
 
             if (id.equals(Identifier.fromNamespaceAndPath("minecraft", "chests/underwater_ruin_big"))) {
                 LootPool.Builder poolBuilder = LootPool.lootPool()
-                        .setRolls(ConstantValue.exactly(1))
+                        .setRolls(ContextIntProviders.exactly(1))
                         .when(net.minecraft.world.level.storage.loot.predicates.LootItemRandomChanceCondition.randomChance(0.06f))
                         .add(LootItem.lootTableItem(ModItems.PRISMARINE_PIPIS)
-                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))));
+                                .apply(SetItemCountFunction.setCount(ContextIntProviders.exactly(1))));
                 tableBuilder.withPool(poolBuilder);
             }
         });

@@ -5,6 +5,9 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
 import potatowolfie.arlo_the_little_guy.datagen.*;
+import potatowolfie.arlo_the_little_guy.datagen.trade.ModVillagerTradeTags;
+import potatowolfie.arlo_the_little_guy.datagen.trade.ModVillagerTrades;
+import potatowolfie.arlo_the_little_guy.world.ModWorldGenerator;
 import potatowolfie.arlo_the_little_guy.world.dimension.ModDimensions;
 import potatowolfie.arlo_the_little_guy.world.feature.ModConfiguredFeatures;
 import potatowolfie.arlo_the_little_guy.world.feature.ModPlacedFeatures;
@@ -20,14 +23,17 @@ public class ArloTheLittleGuyDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModRecipeGenerator::new);
 		pack.addProvider(ModBlockTagProvider::new);
 		pack.addProvider(ModEntityTagProvider::new);
+		pack.addProvider(ModVillagerTradeTags::new);
 	}
 
 	@Override
 	public void buildRegistry(RegistrySetBuilder registryBuilder) {
-		registryBuilder.add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+		registryBuilder.add(Registries.FEATURE, ModConfiguredFeatures::bootstrap);
 		registryBuilder.add(Registries.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
 
 		registryBuilder.add(Registries.LEVEL_STEM, ModDimensions::bootstrapStem);
 		registryBuilder.add(Registries.DIMENSION_TYPE, ModDimensions::bootstrapType);
+
+		registryBuilder.add(Registries.VILLAGER_TRADE, ModVillagerTrades::bootstrap);
 	}
 }

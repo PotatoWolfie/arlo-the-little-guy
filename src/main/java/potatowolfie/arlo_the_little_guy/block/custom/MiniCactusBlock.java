@@ -11,6 +11,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.FluidTags;
+import net.minecraft.util.Prediction;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -46,7 +47,6 @@ import potatowolfie.arlo_the_little_guy.util.ModTags;
 import java.util.Iterator;
 
 public class MiniCactusBlock extends BaseEntityBlock {
-    public static final MapCodec<MiniCactusBlock> CODEC = simpleCodec(MiniCactusBlock::new);
     public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
     public static final BooleanProperty HAS_HAT = BooleanProperty.create("has_hat");
 
@@ -58,11 +58,6 @@ public class MiniCactusBlock extends BaseEntityBlock {
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
                 .setValue(HAS_HAT, false));
-    }
-
-    @Override
-    public MapCodec<MiniCactusBlock> codec() {
-        return CODEC;
     }
 
     @Override
@@ -100,7 +95,7 @@ public class MiniCactusBlock extends BaseEntityBlock {
                     Identifier oldHatId = Identifier.tryParse(oldHatType);
                     if (oldHatId != null && !player.isCreative()) {
                         ItemStack oldHatStack = new ItemStack(BuiltInRegistries.ITEM.getValue(oldHatId));
-                        player.getInventory().placeItemBackInInventory(oldHatStack);
+                        player.getInventory().placeItemBackInInventory(oldHatStack, Prediction.SERVER_ONLY);
                     }
                 }
 

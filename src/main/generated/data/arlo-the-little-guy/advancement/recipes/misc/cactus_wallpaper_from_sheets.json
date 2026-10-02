@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "arlo-the-little-guy:cactus_wallpaper_from_sheets"
+        "recipes": "arlo-the-little-guy:cactus_wallpaper_from_sheets"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

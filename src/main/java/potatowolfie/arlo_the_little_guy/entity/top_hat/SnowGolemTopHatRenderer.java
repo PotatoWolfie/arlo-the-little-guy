@@ -13,6 +13,7 @@ import net.minecraft.client.renderer.entity.state.SnowGolemRenderState;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.ItemStack;
+import org.joml.Matrix4f;
 import potatowolfie.arlo_the_little_guy.item.ModItems;
 
 @Environment(EnvType.CLIENT)
@@ -52,13 +53,13 @@ public class SnowGolemTopHatRenderer extends RenderLayer<SnowGolemRenderState, S
         );
 
         if (golemHead.zRot != 0.0F) {
-            poseStack.mulPose(Axis.ZP.rotation(golemHead.zRot));
+            poseStack.mulPose(new Matrix4f().rotation(Axis.ZP.rotationDegrees(golemHead.zRot)));
         }
         if (golemHead.yRot != 0.0F) {
-            poseStack.mulPose(Axis.YP.rotation(golemHead.yRot));
+            poseStack.mulPose(new Matrix4f().rotation(Axis.YP.rotationDegrees(golemHead.yRot)));
         }
         if (golemHead.xRot != 0.0F) {
-            poseStack.mulPose(Axis.XP.rotation(golemHead.xRot));
+            poseStack.mulPose(new Matrix4f().rotation(Axis.XP.rotationDegrees(golemHead.xRot)));
         }
 
         submitNodeCollector.submitModelPart(

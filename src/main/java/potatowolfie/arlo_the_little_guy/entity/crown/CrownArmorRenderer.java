@@ -14,6 +14,7 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ItemStack;
+import org.joml.Matrix4f;
 import potatowolfie.arlo_the_little_guy.entity.client.ModEntityModelLayers;
 
 @Environment(EnvType.CLIENT)
@@ -43,13 +44,13 @@ public class CrownArmorRenderer implements ArmorRenderer {
         );
 
         if (contextHead.zRot != 0.0F) {
-            matrices.mulPose(Axis.ZP.rotation(contextHead.zRot));
+            matrices.mulPose(new Matrix4f().rotation(Axis.ZP.rotationDegrees(contextHead.zRot)));
         }
         if (contextHead.yRot != 0.0F) {
-            matrices.mulPose(Axis.YP.rotation(contextHead.yRot));
+            matrices.mulPose(new Matrix4f().rotation(Axis.YP.rotationDegrees(contextHead.yRot)));
         }
         if (contextHead.xRot != 0.0F) {
-            matrices.mulPose(Axis.XP.rotation(contextHead.xRot));
+            matrices.mulPose(new Matrix4f().rotation(Axis.XP.rotationDegrees(contextHead.xRot)));
         }
 
         queue.submitModelPart(

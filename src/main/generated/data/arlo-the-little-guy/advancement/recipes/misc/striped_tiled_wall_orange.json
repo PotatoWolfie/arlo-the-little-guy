@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "arlo-the-little-guy:striped_tiled_wall_orange"
+        "recipes": "arlo-the-little-guy:striped_tiled_wall_orange"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

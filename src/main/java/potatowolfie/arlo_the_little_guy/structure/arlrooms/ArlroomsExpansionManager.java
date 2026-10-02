@@ -362,7 +362,7 @@ public final class ArlroomsExpansionManager {
             RoomTemplateInfo info = loadRoomInfo(level.getServer(), roomId, pool);
             if (info == null || info.doors().isEmpty()) continue;
 
-            StructureTemplate template = level.getServer().getStructureManager().getOrCreate(roomId);
+            StructureTemplate template = level.getServer().getStructureTemplateManager().getOrCreate(roomId);
             if (template == null) continue;
 
             for (DoorMarkerInfo roomDoor : info.doors()) {
@@ -510,7 +510,7 @@ public final class ArlroomsExpansionManager {
 
                     for (Identifier decorationId : decorationOrder) {
 
-                        StructureTemplate decoTemplate = server.getStructureManager().getOrCreate(decorationId);
+                        StructureTemplate decoTemplate = server.getStructureTemplateManager().getOrCreate(decorationId);
                         if (decoTemplate == null) continue;
 
                         DecorationPlacement placement =
@@ -732,7 +732,7 @@ public final class ArlroomsExpansionManager {
 
         if (cache.containsKey(roomId)) return cache.get(roomId);
 
-        StructureTemplate template = server.getStructureManager().getOrCreate(roomId);
+        StructureTemplate template = server.getStructureTemplateManager().getOrCreate(roomId);
         if (template == null) return null;
 
         Vec3i size = template.getSize();

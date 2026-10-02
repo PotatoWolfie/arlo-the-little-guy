@@ -1,19 +1,21 @@
 package potatowolfie.arlo_the_little_guy.world.feature.custom;
 
-import com.mojang.serialization.Codec;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
-import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
+import potatowolfie.arlo_the_little_guy.block.ModBlocks;
 import potatowolfie.arlo_the_little_guy.block.custom.MiniCactusBlock;
 import potatowolfie.arlo_the_little_guy.block.entity.ArloBlockEntity;
 
-public class ArloFeature extends Feature<SimpleBlockConfiguration> {
+public record ArloFeature() implements Feature {
+    public static final MapCodec<ArloFeature> CODEC = MapCodec.unit(ArloFeature::new);
+
     private static final WeightedHat[] HATS = {
             new WeightedHat("arlo-the-little-guy:bowler_hat", 20),
             new WeightedHat("minecraft:cactus_flower", 20),
@@ -26,18 +28,13 @@ public class ArloFeature extends Feature<SimpleBlockConfiguration> {
             new WeightedHat("minecraft:bucket", 5)
     };
 
-    public ArloFeature(Codec<SimpleBlockConfiguration> codec) {
-        super(codec);
+    public MapCodec<ArloFeature> codec() {
+        return CODEC;
     }
 
     @Override
-    public boolean place(FeaturePlaceContext<SimpleBlockConfiguration> context) {
-        WorldGenLevel world = context.level();
-        BlockPos pos = context.origin();
-        RandomSource random = context.random();
-        SimpleBlockConfiguration config = context.config();
-
-        BlockState state = config.toPlace().getState(world, random, pos);
+    public boolean place(WorldGenLevel world, ChunkGenerator chunkGenerator, RandomSource random, BlockPos pos) {
+        BlockState state = ModBlocks.MINI_CACTUS.defaultBlockState();
 
         if (!state.canSurvive(world, pos)) {
             return false;
@@ -65,8 +62,7 @@ public class ArloFeature extends Feature<SimpleBlockConfiguration> {
         if (hasHat) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
             if (blockEntity instanceof ArloBlockEntity arloEntity) {
-                String hatType = selectRandomHat(random);
-                arloEntity.setHatType(hatType);
+                arloEntity.setHatType(selectRandomHat(random));
             }
         }
 

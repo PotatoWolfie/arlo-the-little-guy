@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "arlo-the-little-guy:ceiling_tile_diorite"
+        "recipes": "arlo-the-little-guy:ceiling_tile_diorite"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

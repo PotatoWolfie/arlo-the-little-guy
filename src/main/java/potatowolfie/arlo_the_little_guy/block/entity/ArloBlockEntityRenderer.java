@@ -21,6 +21,7 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.Nullable;
+import org.joml.Matrix4f;
 import potatowolfie.arlo_the_little_guy.ArloTheLittleGuy;
 import potatowolfie.arlo_the_little_guy.block.custom.MiniCactusBlock;
 import potatowolfie.arlo_the_little_guy.entity.client.ModEntityModelLayers;
@@ -48,13 +49,13 @@ public class ArloBlockEntityRenderer implements BlockEntityRenderer<ArloBlockEnt
         poseStack.pushPose();
         Direction facing = state.facing;
         poseStack.translate(0.5, 1.5, 0.5);
-        poseStack.mulPose(Axis.XP.rotationDegrees(180));
+        poseStack.mulPose(new Matrix4f().rotation(Axis.XP.rotationDegrees(180.0F)));
 
         switch (facing) {
-            case NORTH -> poseStack.mulPose(Axis.YP.rotationDegrees(270));
-            case EAST -> poseStack.mulPose(Axis.YP.rotationDegrees(0));
-            case SOUTH -> poseStack.mulPose(Axis.YP.rotationDegrees(90));
-            case WEST -> poseStack.mulPose(Axis.YP.rotationDegrees(180));
+            case NORTH -> poseStack.mulPose(new Matrix4f().rotation(Axis.YP.rotationDegrees(270.0F)));
+            case EAST -> poseStack.mulPose(new Matrix4f().rotation(Axis.YP.rotationDegrees(0.0F)));
+            case SOUTH -> poseStack.mulPose(new Matrix4f().rotation(Axis.YP.rotationDegrees(90.0F)));
+            case WEST -> poseStack.mulPose(new Matrix4f().rotation(Axis.YP.rotationDegrees(180.0F)));
         }
 
         RenderType renderLayer = RenderTypes.armorCutoutNoCull(TEXTURE);
